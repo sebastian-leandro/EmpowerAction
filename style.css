@@ -17,6 +17,7 @@ body {
     width: 100%;
     background-attachment: fixed;
     overflow: hidden;
+    box-shadow: 0 3px 10px #8915b3;
 }
 
 
@@ -79,10 +80,11 @@ body {
 .nav__right li a {
     color: #fff;
     text-decoration: none;
-    font-size: 1rem;
-    font-weight: 4  00;
+    font-size: 1.1rem;
+    font-weight: 500;
     padding-bottom: 2px;
     border-bottom: 1px solid #fff;
+    filter: saturate(1.5);
 }
 
 
@@ -156,23 +158,35 @@ body {
 
 
 .section--one {
-    margin: 10vh auto;
+    margin:  auto;
+    position: relative;
 }
 
-
+.background__section--one {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(./img/back2.png)no-repeat center/cover;
+    z-index: -1;
+    background-attachment: fixed;
+}
 
 .container__grid {
-    margin: 10vh auto;
+    margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1.5rem;
-    width: 90%;
+    width: 100%;
+    position: relative;
 
 }
 
 .h2__section--one {
     width: 100%;
     height: 100%;
+    margin: auto;
+    text-align: center;
+
 }
 
 
@@ -182,9 +196,11 @@ body {
     font-weight: 900;
     background: linear-gradient(to right, #63f587, #8915b3);
     background-clip: text;
+    margin: 10vh auto;
     width: fit-content;
     color: transparent;
     letter-spacing: 0.2rem;
+    text-align: center;
 }
 
 .flex__gallery {
@@ -206,6 +222,8 @@ body {
     text-align: center;
     margin: auto;
     box-shadow: 0 3px 10px #ae00ff;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
 }
 
 .flex__item h3 {
@@ -223,3 +241,7 @@ body {
 
 
 
+.flex__item:hover {
+    transform: scale(1.055);
+    transition: 0.3s all ease-in-out;
+}
