@@ -481,6 +481,7 @@
     border-radius: 20px;
     text-align: left;
     padding: 0.33rem;
+    transition: 0.5s all ease-in-out;
 }
 
 .input--work--section span {
@@ -489,6 +490,7 @@
     color: var(--color-white);
     margin-left: 0.33rem;
     cursor: pointer;
+    transition: 0.5s all ease-in-out;
 }
 
 .post--job {
@@ -499,6 +501,7 @@
     cursor: pointer;
     color: var(--color-primary);
     background-color: var(--color-dark);
+    transition: 0.5s all ease-in-out;
 }
 
 .close--sections {
@@ -511,6 +514,7 @@
     padding: 0.36rem 0.76rem;
     background-color: var(--color-dark);
     color: var(--color-white);
+    transition: 0.5s all ease-in-out;
 }
 
 .grids--works--section {
@@ -526,20 +530,21 @@
 }
 
 .grid--works--item {
-    margin-top: 2rem;
-    border:1px solid #fff;
     margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border:1px solid #fff;
     display: grid;
     grid-template-rows: .33fr .66fr;
-    gap: 1rem;
-    margin: auto;
+    gap: 3rem;
     text-align: center;
     border-radius: 20px;
-    width: 100%;
+    width: 90%;
     height: fit-content ;
     justify-content: center;
     position: relative;
     cursor: pointer;
+    transition: 0.5s all ease-in-out;
 }
 
 .profile--worker {
@@ -583,16 +588,17 @@
 
 
 .sidebar--item:hover {
-    transform: scale(1.030);
-    transition: 0.3s all ease;
+    transform: scale(1.050);
+    transition: 0.5s all ease;
     box-shadow: var(--box-shadow);
 }
 
 
 .profile button:hover {
     transform: scale(1.050);
-    background-color: #181a1ea0;
-    transition: 0.5s all ease;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    transition: 0.5s all ease-in-out;
 }
 
 
@@ -606,6 +612,40 @@
     transform: scale(1.050);
     box-shadow: 0 3px 10px #ff0060;
 }
+
+
+.grid--works--item:hover {
+    transition: 0.5s all ease-in-out;
+    box-shadow: 0 3px 20px #ff0060;
+}
+
+.post--job:hover {
+    transform: scale(1.050);
+    transition: 0.5s all ease-in-out;
+    background-color: var(--color-primary);
+    color: #fff;
+}
+
+.close--sections:hover {
+    box-shadow: 0 3px 20px #ff0060;
+    transition: 0.5s all ease-in-out;
+    transform: scale(1.050);
+}
+
+.input--work--section input:hover {
+    box-shadow: 0 3px 20px #ff0060;
+    transition: 0.5s all ease-in-out;
+    transform: scale(1.050);
+}
+
+.input--work--section  span:hover {
+    box-shadow: 0 3px 20px #ff0060;
+    transform: scale(1.050);
+    transition: 0.5s all ease-in-out;
+}
+
+
+
 
 
 
