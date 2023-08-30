@@ -22,6 +22,7 @@
     <!-- Google Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"  rel="stylesheet">
 
+
     <!-- Frameworks JS -->
     <!-- Scroll Reveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
@@ -413,13 +414,23 @@
 
                                 <div class="work--section--demo">
 
+
+                                    <div class="window--post" id="window--post">
+                                        <div class="window--inputs">
+                                            <button class="close--sections close--post" id="close--post">X</button>
+                                            <input type="text" placeholder="Name" required="required" id="postTalentInput-1">
+                                            <input type="text" placeholder="Price" required="required" id="postTalentInput-2">
+                                            <button class="post--job post--window" id="post--talent">Post</button>
+                                        </div>
+                                    </div>
+
                                     <div class="nav--work--section">
 
                                         <div class="input--work--section">
                                             <input type="text" placeholder="Search Work" id="">
                                             <span class="material-icons-sharp">search</span>
                                         </div>
-                                        <button class="post--job">Postularte</button>
+                                        <button class="post--job" id="talent--post">Postularte</button>
                                         <button class="close--sections" id="close--talents">X</button>
 
                                     </div>
@@ -427,10 +438,10 @@
 
 
 
-                                    <div class="grids--works--section" >
+                                    <div class="grids--works--section grid--talents--section" >
 
 
-                                        <div class="grid--works--item">
+                                        <div class="grid--works--item talents--item">
 
                                             <div class="profile--worker">
                                                     <img src="./img/face.png" alt="">
@@ -590,62 +601,65 @@
 
                                 <div class="work--section--demo transactions--worker--bg">
 
-                                    <div class="nav--work--section">
-
-                                        <div class="input--work--section">
-                                            <input type="text" placeholder="Search Chat... " id="">
-                                            <span class="material-icons-sharp">search</span>
-                                        </div>
-                                        <button class="close--sections" id="close--transations">X</button>
+                                    <div class="nav--work--section nav--transations">
+                                        <button class="close--sections close--transations" id="close--transations">X</button>
                                     </div>
 
 
 
-
-                                    <div class="chat--message">
+                                    <div class="grid--chat--container">
 
                                         <div class="chat--inbox">
 
-                                            <div class="chat--inbox--item"><img src="" alt=""><span>Micaela</span></div>
-                                            <div class="chat--inbox--item"><img src="" alt=""><span>Micaela</span></div>
-                                            <div class="chat--inbox--item"><img src="" alt=""><span>Micaela</span></div>
-                                            <div class="chat--inbox--item"><img src="" alt=""><span>Micaela</span></div>
-                                            <div class="chat--inbox--item"><img src="" alt=""><span>Micaela</span></div>
-                                            <div class="chat--inbox--item"><img src="" alt=""><span>Micaela</span></div>
-                                            <div class="chat--inbox--item"><img src="" alt=""><span>Micaela</span></div>
-                                            <div class="chat--inbox--item"><img src="" alt=""><span>Micaela</span></div>
-                                            <div class="chat--inbox--item"><img src="" alt=""><span>Micaela</span></div>
-                                            <div class="chat--inbox--item"><img src="" alt=""><span>Micaela</span></div>
-                                            <div class="chat--inbox--item"><img src="" alt=""><span>Micaela</span></div>
-                                        
+                                            <div class="chat--inbox--top">
+                                                <input type="text" placeholder="Search Message..."><span class="material-icons-sharp">search</span>
+                                            </div>
+
+                                            <div class="chat--inbox--body">
+
+                                                <div class="chat--inbox--item"><img src="./img/face.png" alt=""><div class="chat--item--span"><span>Micaela</span><span>Last seen 7 mins ago</span></div></div>
+                                                <div class="chat--inbox--item"><img src="./img/face.png" alt=""><div class="chat--item--span"><span>Micaela</span><span>Hola Buenos Dias</span></div></div>
+                                                <div class="chat--inbox--item"><img src="./img/face.png" alt=""><div class="chat--item--span"><span>Micaela</span><span>Hola Buenos Dias</span></div></div>
+                                                <div class="chat--inbox--item"><img src="./img/face.png" alt=""><div class="chat--item--span"><span>Micaela</span><span>Hola Buenos Dias</span></div></div>
+                                                <div class="chat--inbox--item"><img src="./img/face.png" alt=""><div class="chat--item--span"><span>Micaela</span><span>Hola Buenos Dias</span></div></div>
+                                                <div class="chat--inbox--item"><img src="./img/face.png" alt=""><div class="chat--item--span"><span>Micaela</span><span>Hola Buenos Dias</span></div></div>
+                                                <div class="chat--inbox--item"><img src="./img/face.png" alt=""><div class="chat--item--span"><span>Micaela</span><span>Hola Buenos Dias</span></div></div>
+                                                <div class="chat--inbox--item"><img src="" alt=""><div class="chat--item--span"><span>Micaela</span><span>Hola Buenos Dias</span></div></div>
+                                                <div class="chat--inbox--item"><img src="" alt=""><div class="chat--item--span"><span>Micaela</span><span>Hola Buenos Dias</span></div></div>
+                                                <div class="chat--inbox--item"><img src="" alt=""><div class="chat--item--span"><span>Micaela</span><span>Hola Buenos Dias</span></div></div>
+                                                <div class="chat--inbox--item"><img src="" alt=""><div class="chat--item--span"><span>Micaela</span><span>Hola Buenos Dias</span></div></div>
+                                                <div class="chat--inbox--item"><img src="" alt=""><div class="chat--item--span"><span>Micaela</span><span>Hola Buenos Dias</span></div></div>
+                                                <div class="chat--inbox--item"><img src="" alt=""><div class="chat--item--span"><span>Micaela</span><span>Hola Buenos Dias</span></div></div>
+                                                <div class="chat--inbox--item"><img src="" alt=""><div class="chat--item--span"><span>Micaela</span><span>Hola Buenos Dias</span></div></div>
+                                                <div class="chat--inbox--item"><img src="" alt=""><div class="chat--item--span"><span>Micaela</span><span>Hola Buenos Dias</span></div></div>
+
+
+
+                                            </div>
+
                                         </div>
 
 
-                                        <div class="chat--text--inbox">
+
+                                        <div class="chat--message">
 
 
-                                            <div class="chat--text--top">
-                                                <img src="" alt=""> <span>Micaela</span>
+                                            <div class="chat--message--top"><img src="" alt=""><div class="span--top"><span>Micaela</span><span>Online</span></div></div>
+
+
+
+                                            <div class="chat--message--body">
+                                                <div class="chat--message--item left--msg"><img src="" alt=""><span>Buenas</span></div>
+                                                <div class="chat--message--item right--msg"><img src="" alt=""><span>Buenas</span></div>
+                                                <div class="chat--message--item left--msg"><img src="" alt=""><span>Buenas</span></div>
+                                                <div class="chat--message--item right--msg"><img src="" alt=""><span>Buenas</span></div>
+                                                <div class="chat--message--item left--msg"><img src="" alt=""><span>Buenas</span></div>
+                                                <div class="chat--message--item right--msg"><img src="" alt=""><span>Buenas</span></div>
+                                                <div class="chat--message--item left--msg"><img src="" alt=""><span>Buenas</span></div>
+                                                <div class="chat--message--item right--msg"><img src="" alt=""><span>Buenas</span></div>
                                             </div>
 
-                                            <div class="chat--text">
 
-                                                <div class="chat--text--msg--left"><span>Hola</span></div>
-                                                <div class="chat--text--msg--right"><span>Buenas</span></div>
-                                                <div class="chat--text--msg--left"><span>Todo ok</span></div>
-                                                <div class="chat--text--msg--right"><span>Bien</span></div>
-                                                <div class="chat--text--msg--left"><span>Lol</span></div>
-                                                <div class="chat--text--msg--right"><span>Pedro</span></div>
-                                                <div class="chat--text--msg--left"><span>Homero</span></div>
-
-                                            </div>
-
-                                            <div class="chat--text--bottom">
-
-
-
-
-                                            </div>
 
 
                                         </div>
@@ -667,7 +681,12 @@
 
                         </div>
 
+                        <!-- JS DEMO -->
 
+                        <!-- JQuery -->
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+                        
+                        <!-- Custom JS -->
                         <script src="contract.js"></script>
                         <script src="demo.js"></script>
 
