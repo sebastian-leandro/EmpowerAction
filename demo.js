@@ -31,65 +31,66 @@ const sectionMap = {
   });
 
 
-
-
-
   //append 
 
-const windowPost = document.getElementById("window--post");
-const windowBtn = document.getElementById("talent--post");
-const windowCloseBtn = document.getElementById("close--post");
-const postTalent = document.getElementById("post--talent");
+const workWindow = document.getElementById("window--work");
+const talentWindow = document.getElementById("window--talent");
 
 
 
-windowBtn.addEventListener("click", () => {
-  windowPost.classList.add("show");
-});
+function post(windowType){
+  if(windowType === "work"){
+    workWindow.classList.add("show")
+  }else if (windowType === "talent"){
+    talentWindow.classList.add("show");
+  }
+};
 
-windowCloseBtn.addEventListener("click", () => {
-  windowPost.classList.remove("show");
-});
+function closePost(windowType){
+  if(windowType === "work"){
+    workWindow.classList.remove("show");
+  }else if(windowType === "talent"){
+    talentWindow.classList.remove("show");
+  }
+};
 
-postTalent.addEventListener("click", function CreateTalent() {
-  function getValuesTalent(){
-      let inputName = document.getElementById("postTalentInput-1").value;
-      let inputPrice = document.getElementById("postTalentInput-2").value;
-      return {
-          name: inputName,
-          price: inputPrice
-      };  
+
+function addTalentToSection(sectionSelector, inputNameSelector, inputPriceSelector) {
+  function getValuesTalent() {
+    const inputName = document.querySelector(inputNameSelector).value;
+    const inputPrice = document.querySelector(inputPriceSelector).value;
+    return { name: inputName, price: inputPrice };  
   }
 
-  const talentValues = getValuesTalent();
+  const { name, price } = getValuesTalent();
 
-  if (talentValues.name && talentValues.price) {
-      const createTalentPost = document.querySelector(".grid--talents--section");
+  if (name && price) {
+      const createTalentPost = document.querySelector(sectionSelector);
 
-      // Main div
+
       let itemTalentDiv = document.createElement("div"); 
       itemTalentDiv.classList.add("grid--works--item");
 
-      // Profile div
+
       let itemTalentDivProfile = document.createElement("div");
       itemTalentDivProfile.classList.add("profile--worker");
 
-      // Image
+
       let itemTalentImg = document.createElement("img");
       itemTalentImg.src= "./img/face.png";
       itemTalentImg.classList.add("img-styling");
 
-      // Name
+
       let itemTalentH3 = document.createElement("h3");
       itemTalentH3.classList.add("h3-styling");
-      itemTalentH3.innerText = talentValues.name;
+      itemTalentH3.innerText = name;
 
-      // Price
+
       let itemTalentP = document.createElement("p");
       itemTalentP.classList.add("p-styling");
-      itemTalentP.innerText = talentValues.price;
+      itemTalentP.innerText = price;
 
-      // Appending elements
+
       itemTalentDivProfile.appendChild(itemTalentImg);
       itemTalentDivProfile.appendChild(itemTalentH3);
       itemTalentDiv.appendChild(itemTalentDivProfile);
@@ -97,11 +98,21 @@ postTalent.addEventListener("click", function CreateTalent() {
       createTalentPost.appendChild(itemTalentDiv);
 
 
-      windowPost.classList.remove("show");
+      workWindow.classList.remove("show")
+      talentWindow.classList.remove("show")
 
   } else {
       window.alert("Los campos no pueden estar vacios");
-  }
+  };
+
+}
+
+
+document.getElementById("post--work").addEventListener("click", () => {
+  addTalentToSection(".grid--work--post", "#postWorkInput-1", "#postWorkInput-2");
+});
+document.getElementById("post--talent").addEventListener("click", () => {
+  addTalentToSection(".grid--talents--section", "#postTalentInput-1", "#postTalentInput-2");
 });
 
 

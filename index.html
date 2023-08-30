@@ -240,13 +240,22 @@
 
                                 <div class="work--section--demo">
 
+                                    <div class="window--post" id="window--work">
+                                        <div class="window--inputs">
+                                            <button class="close--sections close--post" onclick="closePost('work')">X</button>
+                                            <input type="text" placeholder="Work" required="required" id="postWorkInput-1">
+                                            <input type="text" placeholder="Paid" required="required" id="postWorkInput-2">
+                                            <button class="post--job post--window" id="post--work">Post</button>
+                                        </div>
+                                    </div>
+
                                     <div class="nav--work--section">
 
                                         <div class="input--work--section">
                                             <input type="text" placeholder="Search Work" id="">
                                             <span class="material-icons-sharp">search</span>
                                         </div>
-                                        <button class="post--job">Publicar Trabajo</button>
+                                        <button class="post--job" onclick="post('work')">Publicar Trabajo</button>
                                         <button class="close--sections" id="close--sections">X</button>
 
                                     </div>
@@ -254,7 +263,7 @@
 
 
 
-                                    <div class="grids--works--section" >
+                                    <div class="grids--works--section grid--work--post" >
 
 
                                         <div class="grid--works--item">
@@ -415,11 +424,11 @@
                                 <div class="work--section--demo">
 
 
-                                    <div class="window--post" id="window--post">
+                                    <div class="window--post" id="window--talent">
                                         <div class="window--inputs">
-                                            <button class="close--sections close--post" id="close--post">X</button>
+                                            <button class="close--sections close--post" onclick="closePost('talent')">X</button>
                                             <input type="text" placeholder="Name" required="required" id="postTalentInput-1">
-                                            <input type="text" placeholder="Price" required="required" id="postTalentInput-2">
+                                            <input type="text" placeholder="Profession" required="required" id="postTalentInput-2">
                                             <button class="post--job post--window" id="post--talent">Post</button>
                                         </div>
                                     </div>
@@ -430,7 +439,7 @@
                                             <input type="text" placeholder="Search Work" id="">
                                             <span class="material-icons-sharp">search</span>
                                         </div>
-                                        <button class="post--job" id="talent--post">Postularte</button>
+                                        <button class="post--job" onclick="post('talent')">Postularte</button>
                                         <button class="close--sections" id="close--talents">X</button>
 
                                     </div>
@@ -714,8 +723,6 @@
 
                         <div class="mutual--frame">
 
-
-                            <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQHPfd1j7Z85xw09MygZxiNXYnLwV5jy8zbXS0a-l1mPd0p5dELvFSosK8z_qxkCfvo8ZWYJBhSk47c/embed?start=true&amp;loop=true&amp;delayms=15000" frameborder="0" width="600" height="729" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 
                         </div>
