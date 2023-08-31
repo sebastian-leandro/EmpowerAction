@@ -2,8 +2,6 @@ async function getAccount() {
     const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' })
       .catch((err) => {
         if (err.code === 4001) {
-          // EIP-1193 userRejectedRequest error
-          // If this happens, the user rejected the connection request.
           console.log('Please connect to MetaMask.');
         } else {
           console.error(err);
@@ -19,7 +17,6 @@ async function getAccount() {
   
   document.getElementById('connectMetamaskButton').addEventListener('click', async () => {
     if (typeof window.ethereum !== 'undefined') {
-      //window.web3 = new Web3('http://127.0.0.1:8545');
       window.web3 = new Web3(window.ethereum);
     } else {
       alert("Metamask no instalado. Instalelo para continuar");
@@ -29,8 +26,8 @@ async function getAccount() {
     try {
       const account = await getAccount();
   
-      displayAccountNumber(account); // Display the connected address
-      initializeContract(account); // Pass the connected address
+      displayAccountNumber(account);
+      initializeContract(account);
     } catch (error) {
       console.error('User denied account access');
       return;
@@ -38,7 +35,6 @@ async function getAccount() {
   });
   
   function displayAccountNumber(account) {
-    // Display the account number wherever you want in your HTML
     document.getElementById('accountNumber').innerText = account;
     document.querySelector('.wallet__information').classList.add('expanded');
     document.querySelector(".wallet__key").style.marginRight = "0.66rem";

@@ -60,8 +60,8 @@
     width: 1000px;
     height: 500px;
     margin: auto;
-    position: relative;
     overflow: hidden;
+    position: relative;
 }
 
 
@@ -83,7 +83,7 @@
     overflow: hidden;
     color: var(--color-dark);
     background-color: transparent;
-    position: relative;
+
 }
 
 
@@ -209,7 +209,6 @@
     justify-content: space-between;
     align-items: center;
     margin: auto;
-    position: relative;
 }
 
 
@@ -225,6 +224,10 @@
     width: 100%;
     height: 100%;
     cursor: pointer;
+}
+
+.logo--demo img:nth-child(2) {
+    display: none;
 }
 
 .input--nav--demo {
@@ -317,8 +320,9 @@
     height: 350px;
     align-items: center;
     justify-content: center;
-    position: relative;
+    position: absolute;
     z-index: 100;
+
 }
 
 .hero--banner--demo h3 {
@@ -368,14 +372,15 @@
 
 
 .aside--demo {
-    position: absolute;
+    position: fixed;
     left: 1rem;
     bottom: 1rem;
     top: 5rem;
     width: 10rem;
+    height: 80%;
     border-radius: var(--border-radius-2);
     background-color:  #181a1e74;
-    z-index: 999;
+    z-index: 9999;
     box-shadow: var(--box-shadow);
 }
 
@@ -468,7 +473,6 @@
     align-items: center;
     justify-content: space-between;
     margin: auto;
-    position: relative;
 }
 
 .input--work--section {
@@ -580,7 +584,7 @@
 
 
 .transactions--worker--bg {
-    background-color: #181a1e98;
+    background-color: #181a1e;
 }
 
 
@@ -593,11 +597,11 @@
 
 .grid--chat--container {
     display: grid; 
-    grid-template-columns: 0.40fr 0.50fr;
+    grid-template-columns: 0.40fr 0.60fr;
     width: 100%;
     height: 100%;
     margin: auto;
-    gap: 1.2rem;
+    gap: 1rem;
     overflow: scroll;
     background-color: transparent;
 }
@@ -605,11 +609,13 @@
 
 .chat--inbox {
     display: grid;
-    grid-template-rows: 0.10fr 0.90fr;
+    grid-template-rows: 0.14fr 0.86fr;
     margin: auto;
     width: 100%;
     overflow: scroll;
     height: 100%;
+    background-color: #00000074;
+    border-radius: 16px;
 }
 
 .chat--inbox--top {
@@ -618,7 +624,8 @@
     height: 100%;
     align-items: center;
     justify-content: space-evenly;
-    border-bottom: 1px solid #00000026;
+    border-bottom: 1px solid #000000ea;
+    background-color: #000;
 }
 
 .chat--inbox--top input {
@@ -660,7 +667,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 0.50rem 0;
-    border-bottom: 1px solid #000;
+    border: 1px solid #000;
     cursor: pointer;
     margin-top:1rem ;
 }
@@ -703,9 +710,12 @@
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-rows: .10fr .80fr;
-    gap: 1rem;
-    background-color: #e3e2e2;
+    grid-template-rows: .10fr .75fr .15fr;
+    background-color: #00000074;
+    color: #fff;
+    border-radius: 16px;
+    margin: auto;
+    overflow: hidden;
 }
 
 .chat--message--top {
@@ -718,18 +728,48 @@
     border-bottom: 1px solid #000;
 }
 
+
+.chat--message--top img {
+    width: 3rem;
+    height: 3rem;
+    object-fit: cover;
+    border: 1px solid salmon;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.span--top--right {
+    flex-basis: 15%;
+    margin: auto;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.span--top--right span {
+    margin: 0 0.75rem;
+    cursor: pointer;
+}
+
+
+
 .span--top {
     margin: auto;
     justify-content: space-between;
     align-items: center;
     display: flex;
     flex-direction: column;
+    margin: auto;
 }
+
+
 
 .span--top span:first-child {
     font-size: 1rem;
     font-weight: 400;
-    color: #000;
+    color: #fff;
     text-rendering: optimizeLegibility;
 }
 
@@ -737,6 +777,112 @@
     font-size: 0.8rem;
     font-weight: 400;
 }
+
+
+.chat--message--bottom {
+    border-top: 1px solid #000;
+    margin: auto;
+    width: 100%;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.chat--message--bottom input {
+    justify-self: flex-start;
+    border-radius: 16px;
+    height: 80%;
+    width: 80%;
+    padding: 0.33rem;  
+    box-sizing: border-box;
+    color: #000;
+    align-self: center;
+    background-color: #ffffffdc;
+    overflow-y: auto;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    white-space: pre-wrap;
+    word-break: break-word;
+    font-size: 14px;
+}
+
+.chat--message--bottom span {
+    align-items: center;
+    justify-self: flex-end;
+    cursor: pointer;
+    color: #11b90b;
+}
+
+
+.chat--message--body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+}
+
+.chat--message--item {
+    font-size: 14px;
+    font-weight: 500;
+    text-rendering: optimizeLegibility;
+    width: fit-content;
+    height: fit-content;
+    padding: 0.33rem;
+    margin: 0.75rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+.left--msg {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    align-self: flex-start;
+    margin-left: 0.50rem;
+    border-radius: 0.44rem 0.55rem 1.25rem 0.33rem;
+    text-align: center;
+    color: #fff;
+}
+
+.left--msg span {
+    margin-left: 0.50rem;
+}
+
+.right--msg span {
+    margin-right: 0.50rem;
+}
+
+.right--msg {
+    width: fit-content;
+    height: fit-content;
+    align-self: flex-end;
+    margin-right: 0.50rem;
+    border-radius: 0.33rem 0.44rem 0.55rem 1.25rem;
+    color: #fff;
+    text-align: center;
+}
+
+.chat--message--item img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    margin: auto;
+}
+
+
+
+
+
+
+
+
 
 
 /* Windows Post */
@@ -948,6 +1094,248 @@
     font-weight: 400;
     color: #fff;
     text-align: center;
+}
+
+
+
+
+
+
+
+/* Responsive */
+
+
+@media screen and (max-width:999px) {
+    .demo--screen {
+        width: 768px;
+        overflow: hidden;
+    }
+
+
+    .logo--demo {
+        flex-basis: 50%;
+        margin: auto;
+    }
+
+    .logo--demo img {
+        width: 225px;
+        height: 45px;
+        object-fit: cover;
+    }
+
+
+    .input--nav--demo  {
+        display: none;
+    }
+
+
+    .profile {
+        flex-basis: 50%;
+        margin: auto;
+    }
+
+    .hero--banner--demo {
+        margin: auto;
+        align-items: center;
+        margin-left: 2.5rem;
+        
+    }
+
+    .hero--banner--demo h3 {
+        text-align: center;
+        font-size: 24px;
+        align-self: center;
+    }
+
+    .work--section--demo {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+
+    .grids--works--section {
+        grid-template-columns: 1fr 1fr;
+        border: 1px solid #000;
+        border-radius: 16px;
+        margin: auto;
+    }
+
+}
+
+
+
+
+
+
+
+@media screen and (max-width:500px){
+
+
+
+    .container {
+        position: relative;
+    }
+
+    .nav {
+        position: static;
+    }
+
+    .nav--demo {
+        position: static;
+    }
+
+    .input--nav--demo {
+        display: none;
+        margin: auto;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .input--nav--demo input {
+        font-weight: 12px;
+        padding: 0.20rem;
+        
+    }
+
+    .input--nav--demo span {
+        position: absolute;
+        font-size: 25px;
+        right: 0;
+    }
+
+    .profile h3, .profile span {
+        display: none;
+    }
+
+
+    .demo--screen {
+        width: 375px;
+        position: relative;
+        height: 100%;
+    }
+
+    .logo--demo img:first-child {
+        display: none;
+    }
+    
+    .logo--demo img:nth-child(2) {
+        display: block;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin: auto;
+    }
+
+
+
+    .aside--demo {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        top: auto;
+        right: 0;
+        width: 100%;
+        height: 5rem;
+    }   
+
+    .sidebar {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        width: 100%;
+        margin: auto;
+        gap: 0.25rem;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sidebar--item button {
+        flex-direction: column;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .sidebar--item:last-child {
+        position: static;
+    }
+
+    .hero--banner--demo {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        margin: 0;
+        height: 80%;
+    }
+
+    .hero--banner--demo h3 {
+        font-size: 20px;
+        letter-spacing: 0;
+        font-weight: 700;
+    }
+
+    .hero--banner--demo p {
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 0;
+        width: 100%;
+    }
+
+    .hero--link--demo {
+        display: flex;
+    }
+
+    .hero--link--demo button {
+        margin: 0.25rem 0.33rem;
+        padding: 0.25rem;
+        letter-spacing: 0;
+    }
+
+    .work {
+        width: 100%;
+        margin: auto;
+    }
+
+
+    .grids--works--section {
+        grid-template-columns: 1fr;
+        width: 90%;
+        align-items: center;
+    }
+
+    .work--section--demo {
+        position: relative;
+        width: 100%;
+        height: 75%;
+        margin: auto;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    .nav--work--section {
+        position: relative;
+    }
+
+    .nav--work--section input{
+        font-size: 12px;
+    }
+
+    .nav--work--section span {
+        font-size: 25px;
+        position: absolute;
+        right: 0;
+    }
+
 }
 
 

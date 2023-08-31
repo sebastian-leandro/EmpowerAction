@@ -88,7 +88,7 @@ function addTalentToSection(sectionSelector, inputNameSelector, inputPriceSelect
 
       let itemTalentP = document.createElement("p");
       itemTalentP.classList.add("p-styling");
-      itemTalentP.innerText = price;
+      itemTalentP.innerText = `ETH ${price}`;
 
 
       itemTalentDivProfile.appendChild(itemTalentImg);

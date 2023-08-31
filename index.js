@@ -43,5 +43,5 @@ sr.reveal(".text--cards", {
 sr.reveal(".demo", {
     delay: 300,
     origin: "bottom",
-    distance: "50px",
+    distance: "30px",
 })
