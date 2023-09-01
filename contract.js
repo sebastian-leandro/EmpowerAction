@@ -26,7 +26,7 @@ async function connectToMetamask() {
     try {
         const account = await getAccount();
         displayAccountNumber(account);
-        initializeContract(account);
+        //initializeContract(account);
     } catch (error) {
         if (error.message === 'MetaMask Access Denied') {
             console.error('User denied account access');
@@ -39,6 +39,7 @@ async function connectToMetamask() {
 
     function displayAccountNumber(account) {
         document.getElementById("accountBtn").classList.add("highHidden");
+        document.getElementById("bannerMetamaskBtn").classList.add("highHidden");
         document.getElementById("metaMaskBtn").classList.remove("highHidden");
         document.getElementById("metaMaskBtn").classList.add("highShow");
         document.getElementById("accountNumber").innerText = account;
@@ -54,7 +55,7 @@ async function connectToMetamask() {
 
 
 // Function: jobInfo
-async function jobInfo() {
+/*async function jobInfo() {
     const account = await getAccount();
     if (!account) {
         alert("Por favor, conecta tu wallet de MetaMask para continuar.");
@@ -68,10 +69,10 @@ async function jobInfo() {
     document.getElementById("inputJobPrice").value = "";
 
     await window.contract.methods.postJob(jobName, jobPrice).send({from: account});
-}
+}*/
 
 // Function: initializeContract
-async function initializeContract() {
+/*async function initializeContract() {
     const contractABIRequest = await fetch('../out/EmpowerAction.sol/JobMarket.json');
     const contractABI = await contractABIRequest.json();
     const contractAddress = '0x5FbDB2315678afecb367f032d93F642f64180aa3';
@@ -79,7 +80,7 @@ async function initializeContract() {
     window.contract = new window.web3.eth.Contract(contractABI["abi"], contractAddress);
     const job = await contract.methods.getJob(0).call();
     console.log('Result:', job );
-}
+}*/
 
 // Function: saveName
 async function saveName() {
@@ -88,22 +89,30 @@ async function saveName() {
         alert("Por favor, conecta tu wallet de MetaMask para continuar.");
         return;
     }
-    const imgPath = "./img/face.png";
+    const imgPath = "./img/usuario.png";
     const userName = document.getElementById('inputNameRegister').value;
+    const pass = document.getElementById("inputPassword").value;
+        if( !userName || !pass){
+            window.alert("Los Campos deben estar llenos");
+            return}
+            else if(pass.length < 5) {
+                window.alert("La contraseña debe contener mas de 5 caracteres");
+            return}
     document.getElementById('UserNameWallet').textContent = userName;
+    document.getElementById("UserNameAvatar").src = imgPath;
     document.getElementById("registerWindow").classList.remove("show");
-    registerUser(userName);
+    document.getElementById("registerBtn").classList.add("highHidden");
     return;
 }
 
-// Function: registerUser
+/*  Function: registerUser
 async function registerUser(name) {
     const account = await getAccount();
-    await window.contract.methods.registerUser(name).send({from: account});
+    window.contract.methods.registerUser(name).send({from: account});
 }
 
 // Function: checkUser
 async function checkUser(address) {
     const checkedUser = await window.contract.methods.checkUser(address).call();
     console.log('User registered:', checkedUser);
-}
+}*/

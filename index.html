@@ -197,7 +197,7 @@
 
                                     <div class="profile">
                                         <h3 id="UserNameWallet"></h3>
-                                        <img src="" alt="">
+                                        <img src="" alt="" id="UserNameAvatar">
                                     </div>
 
 
@@ -210,14 +210,14 @@
 
                                 <h3>Decentralizing the <span>action</span></h3>
                                 <p>Driving a new era of productivity and growth for our region</p>
-                                <div class="hero--link--demo"><button onclick="post('register')">Register</button><button>Connect</button></div>
+                                <div class="hero--link--demo"><button onclick="post('register')" id="registerBtn">Register</button><button onclick="connectToMetamask()" id="bannerMetamaskBtn">Connect</button></div>
 
 
                                 <div class="register" id="registerWindow">
                                     <button class="close--sections close--register" onclick="closePost('register')">X</button>
                                     <div class="register--form">
                                         <input type="text" placeholder="Name" id="inputNameRegister">
-                                        <input type="password" placeholder="Password">
+                                        <input type="password" placeholder="Password" id="inputPassword">
                                         <button class="post--job" onclick="saveName()">Register</button>
                                     </div>
 
@@ -268,8 +268,9 @@
                                     <div class="window--post" id="window--work">
                                         <div class="window--inputs">
                                             <button class="close--sections close--post" onclick="closePost('work')">X</button>
-                                            <input type="text" placeholder="Work" required="required" id="postWorkInput-1">
-                                            <input type="text" placeholder="Paid" required="required" id="postWorkInput-2">
+                                            <input type="text" placeholder="Work" required id="postWorkInput-1">
+                                            <input type="text" placeholder="Description" required id="postWorkInput-3">
+                                            <input type="text" placeholder="Paid" required id="postWorkInput-2">
                                             <button class="post--job post--window" id="post--work">Post</button>
                                         </div>
                                     </div>
@@ -298,6 +299,7 @@
                                                     <h3>Martina</h3>
                                             </div>
                                                     <p>I am looking for a specialist in gardens and outdoor spaces.</p>
+                                                    
 
                                         </div>
 
@@ -454,6 +456,7 @@
                                             <button class="close--sections close--post" onclick="closePost('talent')">X</button>
                                             <input type="text" placeholder="Name" required="required" id="postTalentInput-1">
                                             <input type="text" placeholder="Profession" required="required" id="postTalentInput-2">
+                                            <input type="text" placeholder="ETH Per Hour" required id="postTalentInput-3">
                                             <button class="post--job post--window" id="post--talent">Post</button>
                                         </div>
                                     </div>
@@ -636,12 +639,15 @@
                                 <div class="work--section--demo transactions--worker--bg">
 
                                     <div class="nav--work--section nav--transations">
+                                        <span class="material-icons-sharp back--arrow">west</span>
                                         <button class="close--sections close--transations" id="close--transations">X</button>
                                     </div>
 
 
 
                                     <div class="grid--chat--container">
+
+
 
                                         <div class="chat--inbox">
 
@@ -667,8 +673,6 @@
                                                 <div class="chat--inbox--item"><img src="" alt=""><div class="chat--item--span"><span>Daniel</span><span>Last seen 3 weeks ago</span></div></div>
                                                 <div class="chat--inbox--item"><img src="" alt=""><div class="chat--item--span"><span>Christopher</span><span>Last seen 5 weeks ago</span></div></div>
 
-
-
                                             </div>
 
                                         </div>
@@ -676,6 +680,8 @@
 
 
                                         <div class="chat--message">
+
+                                            
 
 
                                             <div class="chat--message--top"><img src="./img/face.png" alt=""><div class="span--top"><span>Micaela</span><span>Online</span></div><div class="span--top--right"><span class="material-icons-sharp">call</span><span class="material-icons-sharp">videocam</span></div></div>

@@ -60,16 +60,17 @@ function closePost(windowType){
 };
 
 
-function addTalentToSection(sectionSelector, inputNameSelector, inputPriceSelector) {
+function addTalentToSection(sectionSelector, inputNameSelector, inputPriceSelector, inputDescSelector ) {
   function getValuesTalent() {
     const inputName = document.querySelector(inputNameSelector).value;
     const inputPrice = document.querySelector(inputPriceSelector).value;
-    return { name: inputName, price: inputPrice };  
+    const inputDesc = document.querySelector(inputDescSelector).value;
+    return { name: inputName, price: inputPrice, desc: inputDesc };  
   }
 
-  const { name, price } = getValuesTalent();
+  const { name, price, desc } = getValuesTalent();
 
-  if (name && price) {
+  if (name && price && desc) {
       const createTalentPost = document.querySelector(sectionSelector);
 
 
@@ -82,7 +83,7 @@ function addTalentToSection(sectionSelector, inputNameSelector, inputPriceSelect
 
 
       let itemTalentImg = document.createElement("img");
-      itemTalentImg.src= "./img/face.png";
+      itemTalentImg.src= "./img/usuario.png";
       itemTalentImg.classList.add("img-styling");
 
 
@@ -93,13 +94,18 @@ function addTalentToSection(sectionSelector, inputNameSelector, inputPriceSelect
 
       let itemTalentP = document.createElement("p");
       itemTalentP.classList.add("p-styling");
-      itemTalentP.innerText = `ETH ${price}`;
+      itemTalentP.innerText = price;
+
+      let itemTalentPDesc = document.createElement("p");
+      itemTalentPDesc.classList.add("p-styling");
+      itemTalentPDesc.innerText = `ETH ${desc} Per Hour`;
 
 
       itemTalentDivProfile.appendChild(itemTalentImg);
       itemTalentDivProfile.appendChild(itemTalentH3);
       itemTalentDiv.appendChild(itemTalentDivProfile);
       itemTalentDiv.appendChild(itemTalentP);
+      itemTalentDiv.appendChild(itemTalentPDesc);
       createTalentPost.appendChild(itemTalentDiv);
 
 
@@ -114,11 +120,54 @@ function addTalentToSection(sectionSelector, inputNameSelector, inputPriceSelect
 
 
 document.getElementById("post--work").addEventListener("click", () => {
-  addTalentToSection(".grid--work--post", "#postWorkInput-1", "#postWorkInput-2");
+  addTalentToSection(".grid--work--post", "#postWorkInput-1", "#postWorkInput-2", "#postWorkInput-3");
 });
 document.getElementById("post--talent").addEventListener("click", () => {
-  addTalentToSection(".grid--talents--section", "#postTalentInput-1", "#postTalentInput-2");
+  addTalentToSection(".grid--talents--section", "#postTalentInput-1", "#postTalentInput-2", "#postTalentInput-3");
 });
+
+
+
+// Msg 
+
+const backArrow = document.querySelector(".back--arrow");
+const chatInbox = document.querySelector(".chat--inbox");
+const chatItem = document.querySelectorAll(".chat--inbox--item");
+const chatMsg = document.querySelector(".chat--message");
+
+
+backArrow.classList.add("hidden");
+
+
+
+
+  chatItem.forEach(chat => {
+    chat.addEventListener("click", () => {
+      if(window.innerWidth < 768){
+        chatInbox.classList.add("hidden");
+        chatMsg.classList.add("visible");
+        backArrow.classList.remove("hidden");
+      }
+      });
+  });
+
+
+  backArrow.addEventListener("click", () => {
+    chatInbox.classList.remove("hidden");
+    chatMsg.classList.remove("visible");
+    backArrow.classList.add("hidden");
+  });
+
+
+
+
+
+
+
+
+
+
+
 
 
 
