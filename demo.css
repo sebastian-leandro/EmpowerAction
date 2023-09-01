@@ -202,115 +202,133 @@
 /* Navbar Demo */
 
 .nav--demo {
-    width: 100%;
+    display: grid;
     height: 60px;
-    border-bottom: 1px solid #fff ;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: auto;
+    width: 100%;
+    grid-template-columns: 33% 33% 9% 25%;
+    border-bottom: 1px solid #ff0060;
 }
-
 
 .logo--demo {
-    width: 120px;
-    height: 45px;
-    flex-basis: 25%;
-    margin: auto;
-}
-
-.logo--demo img {
-    object-fit: cover;
+    display: flex;
     width: 100%;
     height: 100%;
-    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo--demo img:first-child {
+    width: 225px;
+    height: 45px;
 }
 
 .logo--demo img:nth-child(2) {
-    display: none;
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+    visibility: hidden;
 }
+
 
 .input--nav--demo {
     display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
-.input--nav--demo input {
-    margin: auto;
-    background-color: transparent;
-    color: var(--color-white);
-    border-radius: var(--border-radius-2);
-    padding: 0.66rem;
-    transition: .5s all ease;
-    border-bottom: 2px solid #00000085;
+.input--demo {
+    padding: 0.33rem;
+    border-radius: 16px;
+    background-color: #170000;
+    border: 1px solid #210246;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: capitalize;
+    text-align: left;
+    text-rendering: optimizeLegibility;
+    color: #fff;
 }
 
 .input--nav--demo span {
-    font-size: 2rem;
-    padding: 0.26rem;
-    color: var(--color-white);
+    color: #fff;
+    font-size: 30px;
+    margin-left: 0.33rem;
     border-radius: 50%;
-    transition: .5s all ease;
     cursor: pointer;
-    margin: auto;
-    margin-left: 0.66rem;
-
 }
 
+
+.metamask--wallet {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.metamask--wallet button {
+    padding:  0.44rem 0.66rem;
+    color: var(--color-primary);
+    border-radius: 16px;
+    height: fit-content;
+    width: fit-content;
+    background-color: var(--color-background);
+    letter-spacing: 0.1rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border: 1px solid #170000;
+    cursor: pointer;
+}
+
+
+.metamask--wallet span {
+    font-size: .8rem;
+    font-weight: 400;
+    color: #6c9bcf;
+    text-rendering: optimizeLegibility;
+    text-transform: uppercase;
+    text-decoration: underline;
+    width: 50%;
+    overflow: hidden;
+}
 
 
 
 .profile {
     display: flex;
-    flex-basis: 25%;
-    margin: auto;
-    cursor: pointer;
-}
-
-.profile button {
-    margin: auto 2rem;
-    border-radius: 20px;
-    padding: 0.44rem;
-    font-size: 1rem;
-    letter-spacing: 0.1rem;
-    font-weight: 400;
-    background-color:var(--color-background); 
-    cursor: pointer;
-    text-transform: uppercase;
-    color: var(--color-primary);
-    height: fit-content;
-    transition: 0.5s all ease;
-}
-
-.profile span {
-    display: flex;
-    font-size: 1rem;
-    font-weight: 600;
-    margin: auto;
-    text-align: center;
-    color: var(--color-white);
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 0.50rem;
 }
 
 .profile h3 {
     font-size: 1rem;
-    font-weight: 600;
-    margin: auto;
-    color: var(--color-white);
+    font-weight: 500;
+    text-decoration: underline;
+    text-rendering: optimizeLegibility;
+    text-transform: uppercase;
+    color: #fff;
 }
 
-
-.profile--picture {
-    margin: auto 1rem;
-    width: 3rem;
-    height: 3rem;
-}
 
 .profile img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
-    margin: auto ;
+    border: 1px solid #fff;
 }
+
+
+/* Hero Banner */
+
+
 
 
 .hero--banner--demo {
@@ -882,6 +900,56 @@
 
 
 
+/* Register  Window */
+
+
+.register {
+    width: 400px;
+    height: 200px;
+    align-items: center;
+    z-index: -1;
+    position: absolute;
+    margin: auto;
+    background-color: var(--color-background);
+    border-radius: 16px;
+    box-shadow: 0 0 3px 100vmin rgba(0, 0, 0, .3);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s all ease;
+}
+
+.close--register {
+    position: absolute;
+    top: 1rem;
+    right: .5rem;
+    padding: 0.66rem;
+    transition: 0.5s all ease;
+}
+
+.register--form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.register--form input {
+    margin: 0.75rem 0;
+    border-radius: 16px;
+    background-color: #170000;
+    color: #fff;
+    text-transform: capitalize;
+    text-rendering: optimizeLegibility;
+    font-size: 16px;
+    padding: 0.33rem;
+    border: 1px solid #43174f;
+    font-style: normal;
+    font-weight: 500;
+}
+
+
 
 
 
@@ -1063,11 +1131,54 @@
 
 
 
+.expand {
+    width: 4rem;
+    overflow: hidden;
+    height: fit-content;
+    font-size: 12px;
+    margin: 0 1rem;
+    display: flex;
+}
+
+
 .show {
     visibility: visible;
     opacity: 1;
     z-index: 500;
-    transition: 0.5s all ease;
+    transition: 0.5s all ease;  
+}
+
+
+.hidden {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+
+.highShow {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    object-fit: cover;
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    cursor: pointer;
+}
+
+.highHidden {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    position: absolute;
+    z-index: -1;
+    visibility: hidden;
+    opacity: 0;
 }
 
 
@@ -1102,6 +1213,8 @@
 
 
 
+
+
 /* Responsive */
 
 
@@ -1112,27 +1225,10 @@
     }
 
 
-    .logo--demo {
-        flex-basis: 50%;
-        margin: auto;
+    .nav--demo {
+        grid-template-columns: 33% 25% 17% 25%;
     }
 
-    .logo--demo img {
-        width: 225px;
-        height: 45px;
-        object-fit: cover;
-    }
-
-
-    .input--nav--demo  {
-        display: none;
-    }
-
-
-    .profile {
-        flex-basis: 50%;
-        margin: auto;
-    }
 
     .hero--banner--demo {
         margin: auto;
@@ -1174,45 +1270,7 @@
 @media screen and (max-width:500px){
 
 
-
-    .container {
-        position: relative;
-    }
-
-    .nav {
-        position: static;
-    }
-
-    .nav--demo {
-        position: static;
-    }
-
-    .input--nav--demo {
-        display: none;
-        margin: auto;
-        position: relative;
-        width: 100%;
-        height: 100%;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .input--nav--demo input {
-        font-weight: 12px;
-        padding: 0.20rem;
-        
-    }
-
-    .input--nav--demo span {
-        position: absolute;
-        font-size: 25px;
-        right: 0;
-    }
-
-    .profile h3, .profile span {
-        display: none;
-    }
-
+    /* Demo Body 375px */
 
     .demo--screen {
         width: 375px;
@@ -1220,20 +1278,130 @@
         height: 100%;
     }
 
+
+    .container {
+        position: relative;
+    }
+
+
+
+
+    /* Nav Bar 375px */
+
+
+    .nav {
+        position: static;
+    }
+
+
+    .nav--demo {
+        grid-template-columns: 15% 40% 20% 20%;
+        gap: 0.5rem;
+        justify-content: space-between;
+    }
+
+
+    .logo--demo {
+        margin: auto;
+    }
+
     .logo--demo img:first-child {
         display: none;
     }
-    
+
     .logo--demo img:nth-child(2) {
-        display: block;
+        position: static;
         width: 45px;
         height: 45px;
         border-radius: 50%;
         object-fit: cover;
+        margin-left: auto;
+        z-index: 0;
+        visibility: visible;
+        opacity: 1;
+        cursor: pointer;
+    }
+
+    .input--nav--demo {
+        display: flex;  
+        height: inherit;
+        width: inherit;
+        position: relative;
+    }
+
+    .input--nav--demo input {
+        font-weight: 12px;
+        padding: 0.15rem;
+        border: 1px solid #000;
+        position: relative;
+        width: 100%;
+    }
+
+    .input--nav--demo span {
+        font-size: 25px;
+        right: 0;
+        position: absolute;
+    }
+
+
+    .metamask--wallet {
+        width: inherit;
+        height: inherit;
+        visibility: visible;
+    }
+
+    .metamask--wallet button {
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .metamask--wallet img {
+        display: block;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        object-fit: cover;
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        cursor: pointer;
+    }
+
+
+    .metamask--wallet span {
+        font-size: .8rem;
+        font-weight: 400;
+        overflow: hidden;
+    }
+
+    
+    .profile {
         margin: auto;
     }
 
 
+    .profile h3 {
+        display: none;
+        position: absolute;
+        z-index: -1;
+    }
+
+
+    .profile img {
+        align-self: center;
+    }
+
+
+
+
+
+
+
+
+    /* Aside 375px */
 
     .aside--demo {
         position: fixed;
@@ -1267,6 +1435,16 @@
     .sidebar--item:last-child {
         position: static;
     }
+    
+
+
+    /* Banner 375px */
+
+
+    .hero--banner {
+        height: 80%;
+    }
+
 
     .hero--banner--demo {
         width: 100%;
@@ -1295,46 +1473,113 @@
     }
 
     .hero--link--demo button {
-        margin: 0.25rem 0.33rem;
-        padding: 0.25rem;
-        letter-spacing: 0;
+        margin: 0.25rem 0.75rem;
+        padding: 0.33rem;
+        letter-spacing: 0.1rem;
     }
+
+
+
+    /* Works 375px */
 
     .work {
         width: 100%;
+        margin: auto;
+        height: 85%;
+        bottom: 1rem;
+    }
+
+    .work--section--demo {
+        width: 90%;
+        height: 85%;
+        top: auto;
+        bottom: auto;
+        position: absolute;
         margin: auto;
     }
 
 
     .grids--works--section {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         width: 90%;
         align-items: center;
     }
 
-    .work--section--demo {
-        position: relative;
-        width: 100%;
-        height: 75%;
-        margin: auto;
-        left: 0;
-        right: 0;
-        bottom: 0;
+
+
+
+    .grid--works--item {
+        width: 90%;
+        max-height:90% ;
+        border-radius: 16px;
+        gap: 0.25rem;
     }
+
+    .profile--worker {
+        justify-content: center;
+        flex-direction: column;
+        border-bottom: 1px solid #fff;
+    }
+
+    .profile--worker img {
+        width:3rem;
+        height:3rem;
+    }
+
+
+    .profile--worker h3 {
+        font-size: .9rem;
+    }
+
+
+    .grid--works--item p {
+        overflow: scroll;
+    }
+
+    
+
+    /* Nav Work Section Responsive */
+
 
     .nav--work--section {
-        position: relative;
+        display: grid;
+        grid-template-columns: 40% 60%;
+        gap: 0.25rem;
     }
 
-    .nav--work--section input{
-        font-size: 12px;
+    .input--work--section {
+        position: relative;
+        display: flex;
+        align-items: center;
     }
+
+    .input--work--section input{
+        font-size: 12px;
+        width: 90%;
+        background-color: #170000;
+        color: #fff;
+    }
+
 
     .nav--work--section span {
-        font-size: 25px;
+        font-size: 22px;
+        right: .7rem;
+        color: #fff;
         position: absolute;
-        right: 0;
     }
+
+    .close--sections {
+        position: absolute;
+        right: 0.5rem;
+        top: 1.2rem;
+    }
+
+
+    .post--job {
+        width: fit-content;
+    }
+
+
 
 }
 

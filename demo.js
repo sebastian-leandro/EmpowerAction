@@ -35,6 +35,7 @@ const sectionMap = {
 
 const workWindow = document.getElementById("window--work");
 const talentWindow = document.getElementById("window--talent");
+const registerAccount = document.getElementById("registerWindow");
 
 
 
@@ -43,6 +44,8 @@ function post(windowType){
     workWindow.classList.add("show")
   }else if (windowType === "talent"){
     talentWindow.classList.add("show");
+  }else if(windowType === "register"){
+    registerAccount.classList.add("show");
   }
 };
 
@@ -51,6 +54,8 @@ function closePost(windowType){
     workWindow.classList.remove("show");
   }else if(windowType === "talent"){
     talentWindow.classList.remove("show");
+  }else if(windowType === "register"){
+    registerAccount.classList.remove("show");
   }
 };
 
@@ -114,6 +119,14 @@ document.getElementById("post--work").addEventListener("click", () => {
 document.getElementById("post--talent").addEventListener("click", () => {
   addTalentToSection(".grid--talents--section", "#postTalentInput-1", "#postTalentInput-2");
 });
+
+
+
+
+
+
+
+
 
 
 

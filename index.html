@@ -172,30 +172,56 @@
 
 
 
-                            <nav class="nav--demo">
+                                <nav class="nav--demo">
 
-                                <div class="logo--demo"><img src="./img/LARGO1.png" alt="Logo"><img src="./img/logo nuevo.png" alt=""></div>
 
-                                <div class="input--nav--demo">
-                                    <input type="text" placeholder="Say Something">
-                                    <span class="material-icons-sharp">search</span>
-                                </div>
-                                <div class="profile">
-                                    <button id="connectMetamaskButton">Wallet</button>
-                                    <span>Hey,<h3>Sebastian</h3></span>
-                                    <div class="profile--picture">
-                                        <img src="./img/face.png" alt="">
+                                    <div class="logo--demo">
+                                        <img src="./img/LARGO1.png" alt="Logo">
+                                        <img src="./img/logo nuevo.png" alt="Logo responsivo">
                                     </div>
-                                </div>
-                            </nav>
+
+
+                                    <div class="input--nav--demo">
+                                        <input type="text" class="input--demo" placeholder="Search...">
+                                        <span class="material-icons-sharp">search</span>
+                                    </div>
+
+
+
+                                    <div class="metamask--wallet">
+                                        <img src="./img/metamask-seeklogo.com.svg" id="metaMaskBtn" class="highHidden" onclick="connectToMetamask()" alt="Metamask Logo">
+                                        <button onclick="connectToMetamask()" id="accountBtn">Wallet</button>
+                                        <span id="accountNumber"></span>
+                                    </div>
+
+
+                                    <div class="profile">
+                                        <h3 id="UserNameWallet"></h3>
+                                        <img src="" alt="">
+                                    </div>
+
+
+
+                                </nav>
 
 
 
                             <div class="hero--banner--demo">
 
-                                <h3>Decentralizing the<span>action</span></h3>
+                                <h3>Decentralizing the <span>action</span></h3>
                                 <p>Driving a new era of productivity and growth for our region</p>
-                                <div class="hero--link--demo"><button>Register</button><button>Connect</button></div>
+                                <div class="hero--link--demo"><button onclick="post('register')">Register</button><button>Connect</button></div>
+
+
+                                <div class="register" id="registerWindow">
+                                    <button class="close--sections close--register" onclick="closePost('register')">X</button>
+                                    <div class="register--form">
+                                        <input type="text" placeholder="Name" id="inputNameRegister">
+                                        <input type="password" placeholder="Password">
+                                        <button class="post--job" onclick="saveName()">Register</button>
+                                    </div>
+
+                                </div>
 
                             </div>
 
@@ -436,7 +462,7 @@
 
                                         <div class="input--work--section">
                                             <input type="text" placeholder="Search Work" id="">
-                                            <span class="c">search</span>
+                                            <span class="material-icons-sharp">search</span>
                                         </div>
                                         <button class="post--job" onclick="post('talent')">Apply at</button>
                                         <button class="close--sections" id="close--talents">X</button>
@@ -700,6 +726,9 @@
                         <!-- JQuery -->
                         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
                         
+                        <!-- Web3 JS -->
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/4.1.1/web3.min.js"></script>
+
                         <!-- Custom JS -->
                         <script src="contract.js"></script>
                         <script src="demo.js"></script>
