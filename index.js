@@ -17,31 +17,74 @@ closeButton.addEventListener("click", ()=> {
 // Scroll Reveal 
 
 const sr = ScrollReveal ({
-    duration: 1000,
+    duration: 750,
     reset: true,
 })
 
 sr.reveal(".hero--banner", {
-    delay:100,
+    delay:500,
     origin: "top",
-    distance: "50px",
+    distance: "25px",
 })
 
 
 sr.reveal(".container--card", {
-    delay: 300,
+    delay: 500,
     origin:"left",
-    distance: "30px",
+    distance: "25px",
 });
 
 sr.reveal(".text--cards", {
-    delay: 300,
+    delay: 500,
     origin: "right",
-    distance: "50px",
-})
+    distance: "25px",
+});
 
 sr.reveal(".demo", {
-    delay: 300,
+    delay: 500,
     origin: "bottom",
-    distance: "30px",
-})
+    distance: "25px",
+});
+
+sr.reveal(".mutual--credits", {
+    delay:500,
+    origin:"top",
+    distance: "25px"
+});
+
+sr.reveal(".mutual--pdf", {
+    delay:500,
+    origin:"left",
+    distance: "25px"
+});
+
+sr.reveal(".divide--cards", {
+    delay:500,
+    origin: "bottom",
+    distance: "25px"
+});
+
+sr.reveal(".cards--credits--mutual", {
+    delay:500,
+    origin: "right",
+    distance: "25px"
+});
+
+
+
+// Divider 
+
+
+function checkDivider() {
+    const divider = document.getElementById("divider");
+    if(window.innerWidth < 768){
+        divider.src = "./img/responsiveDivider.svg";
+    }else {
+        divider.src = "./img/divide1.svg";
+    };
+};
+
+
+checkDivider()
+
+window.addEventListener("resize", checkDivider);
