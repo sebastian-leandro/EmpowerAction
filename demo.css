@@ -62,15 +62,19 @@
     margin: auto;
     overflow: hidden;
     position: relative;
+    border-radius: 16px;
+    margin: 2vh auto;
+    box-shadow: 0 3px 20px rgba(176, 20, 80, 0.976);
 }
 
 
 .demo {
     width: 100%;
     height: 100%;
-    border: 1px solid #fff; 
     overflow: hidden;
     border-radius: 16px;
+
+
 }
 
 /* Demo */
@@ -354,6 +358,7 @@
     background: linear-gradient(to right,#63f587, #8915b3);
     background-clip: text;
     color: transparent;
+    -webkit-background-clip: text;
 
 }
 
