@@ -299,8 +299,8 @@ body {
 
 
 .grid--item--img img {
-    width: 5rem;
-    height: 5rem;
+    width: 10rem;
+    height: 10rem;
     object-fit: cover;
     margin: auto;
 }
@@ -312,6 +312,7 @@ body {
     text-rendering: optimizeLegibility;
     text-align: center;
     font-weight: var(--h3-w);
+    margin-bottom: 1.5rem;
 }
 
 
@@ -585,9 +586,11 @@ body {
 
 
     .grid--item--img {
-        width: 40%;
-        height: 50%;
+        width: 45%;
+        height: 40%;
     }
+
+
 
     .grid--element--card {
         margin: auto;

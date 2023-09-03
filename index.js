@@ -70,6 +70,19 @@ sr.reveal(".cards--credits--mutual", {
     distance: "25px"
 });
 
+sr.reveal(".p--tech--left", {
+    delay: 500,
+    origin: "left",
+    distance: "25px"
+});
+
+sr.reveal(".p--tech--right", {
+    delay:500,
+    origin: "left",
+    distance: "25px"
+});
+
+
 
 
 // Divider 
