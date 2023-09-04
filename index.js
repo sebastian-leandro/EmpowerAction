@@ -85,17 +85,39 @@ sr.reveal(".p--tech--right", {
 
 
 
+
+// NavBar 
+
+document.addEventListener("DOMContentLoaded", function() {
+    const navExtend = document.querySelector(".nav--extend");
+
+
+    navExtend.addEventListener("mouseenter", function() {
+        const navSubmenu = this.querySelector(".secondary--nav");
+        navSubmenu.classList.add("submenu--active");
+    });
+});
+
+
+const navSubmenu = document.querySelector(".secondary--nav");
+
+if (navSubmenu) {  
+    navSubmenu.addEventListener("mouseleave", function() {
+        setTimeout(() => { this.classList.remove("submenu--active"); }, 1000);
+    });
+}
+
 // Divider 
 
 
 function checkDivider() {
-    const divider = document.getElementById("divider");
-    if(window.innerWidth < 768){
-        divider.src = "./img/responsiveDivider.svg";
-    }else {
-        divider.src = "./img/divide1.svg";
-    };
-};
+    const dividers = document.querySelectorAll(".divider--responsive");
+    const src = window.innerWidth <= 768 ? "./img/responsiveDivider.svg" : "./img/divide1.svg";
+
+    dividers.forEach((divider) => {
+        divider.src = src;
+    });
+}
 
 
 checkDivider()

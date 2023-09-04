@@ -33,15 +33,21 @@
     
     <!-- Header -->
 
-    <header class="header">
+    <header class="header" id="home">
         <nav class="nav">
             <div class="logo"><span class="material-icons-sharp close"  id="open--nav">menu</span><img src="./img/logonombremed.png" alt="Logo"></div>
             <ul class="nav--list">
                 <span class="material-icons-sharp" id="close-nav">cancel</span>
-                <li><a href="">Home</a></li>
-                <li><a href="">Demo</a></li>
-                <li><a href="">Docs</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#liveDemo">Demo</a></li>
+                <li class="nav--extend">Docs<ul class="secondary--nav">
+                    <li><a href="#technology">Technology</a></li>
+                    <li><a href="#aboutUs">About Us</a></li>
+                    <li><a href="#Credits">Credits</a></li>
+                    <li><a href="#roadmap">Roadmap</a></li>
+                    <li><a href="https://github.com/EmpowerAction" target="_blank">Github</a></li>
+                </ul></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
 
         </nav>
@@ -49,7 +55,7 @@
         <div class="hero--banner">
             <h1>The first decentralized platform to connect skills, talents and jobs.</h1>
             <p> We use cryptoassets to guarantee transparent transactions without intermediaries. We are not looking for a market, we are looking for a new era of productivity and growth for our region.</p>
-            <div class="hero--link"><a href="">Live Demo</a><a href="">Docs</a></div>
+            <div class="hero--link"><a href="#  liveDemo">Live Demo</a><a href="https://github.com/EmpowerAction" target="_blank">Docs</a></div>
         </div>
 
 
@@ -66,7 +72,11 @@
 
             <section class="card--section">
 
-                <h2 class="main--card--h2">The Time is Now</h2>
+
+
+
+
+                <h2 class="main--card--h2">The Time Is Now</h2>
 
                 <div class="grid--column--section">
 
@@ -102,7 +112,7 @@
                     </div>
 
 
-                        <img src="" alt="Divisor" class="divider" id="divider" loading="lazy">
+                        <img src="" alt="Divisor" class="divider divider--responsive" loading="lazy">
 
 
 
@@ -143,7 +153,7 @@
 
 
 
-            <section class="demo--section">
+            <section class="demo--section" id="liveDemo">
 
                 <div class="demo--screen">
 
@@ -762,7 +772,7 @@
             <!-- Tech Section -->
 
 
-            <section class="tech--section">
+            <section class="tech--section" id="technology">
 
 
                 <h2 class="main--card--h2 tech--h2">Our Tech</h2>
@@ -830,41 +840,41 @@
             <!-- Mutual Credits -->
 
 
-            <section class="mutual--credits">
+            <section class="mutual--credits" id="Credits">
 
 
 
-                <h2 class="main--card--h2">Our Mission</h2>
+                <h2 class="main--card--h2 mutual--h2">Our Mission</h2>
 
-                <div class="grid--column--section">
+                <div class="grid--column--section grid--container--credits">
 
                         <div class="mutual--pdf">
                             <embed src="./rsc/PDFING.pdf" type="application/pdf" class="pdf--credits">
                         </div>
 
-                        <div class="divide--cards">
-                            <img src="./img/divide1.svg" alt="">
-                        </div>
+                        
+                            <img src="./img/divide1.svg" class="divider divider--responsive" alt="divisor">
+                        
 
 
-                        <div class="grid--item--p">
+                        <div class="grid--element--card grid--mutual--credits--p">
 
-                            <article>
+                            <article class="grid--item--p">
                                 <p>1. Price of the Product or Service:
                                 Focuses on structuring and regulating pricing by supply and demand, balances, issuance, and circulation of tokens, as well as credit management within the system.</p>
                             </article>
 
-                            <article>
+                            <article class="grid--item--p">
                                 <p>2. Ecosystem Balance:
                                 It is divided into revenues and expenses. Revenues come from various commissions, while expenses include maintenance expenses and allocations for liquidity injection. A native token (EMP) is introduced and mechanisms for buying back and burning tokens are established.</p>
                             </article>
 
-                            <article>
+                            <article class="grid--item--p">
                                 <p>3. Issuance and Circulation of Tokens based on credits (EMP and DEUS):
                                 Procedures for issuing credits and tokens are detailed, allowing greater flexibility in transactions. A mechanism for managing and settling debts within the system is introduced.</p>
                             </article>
 
-                            <article>
+                            <article class="grid--item--p">
                                 <p>4. Buy Back and Burn Policy:
                                 Policies are established to maintain the balance between token supply and demand, including updating the total supply of tokens in circulation.</p>
                             </article>
@@ -880,15 +890,153 @@
 
 
 
+            <!-- RoadMap -->
 
 
+
+            <section class="roadmap" id="roadmap">
+
+                <div class="animation--card--section">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <h2 class="main--card--h2">Our Goals</h2>
+
+                <div class="roadmap--container">
+                    <img src="./img/ROADMAP.svg" alt="RoadMap" loading="lazy" class="roadmap--img">
+                </div>
+
+            </section>
+
+
+
+            <!-- End RoadMap Section -->
+
+
+
+
+
+            <!-- About US Section -->
+
+
+            <section class="about--us" id="aboutUs">
+
+
+                <h2 class="main--card--h2 h2--about--us">About Us </h2>
+
+
+                <div class="about--us--container">
+
+
+
+                    <article class="card--about--us">
+
+                        <div class="card--img">
+                            <img src="./img/face.png" alt="Personal Face" loading="lazy">
+                        </div>
+
+
+                        <div class="card--description">
+                            <h3>Leandro Cánepa</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ratione earum, hic recusandae quidem praesentium porro voluptatibus explicabo ipsam accusantium deleniti, rem quibusdam repellendus facilis.</p>
+                            <a href="">LinkTree</a>
+                        </div>
+
+                    </article>
+
+
+
+                    <article class="card--about--us">
+
+                        <div class="card--img">
+                            <img src="./img/face.png" alt="Personal Face" loading="lazy">
+                        </div>
+
+
+                        <div class="card--description">
+                            <h3>Leandro Cánepa</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ratione earum, hic recusandae quidem praesentium porro voluptatibus explicabo ipsam accusantium deleniti, rem quibusdam repellendus facilis.</p>
+                            <a href="">LinkTree</a>
+                        </div>
+
+                    </article>
+
+
+
+                    <article class="card--about--us">
+
+                        <div class="card--img">
+                            <img src="./img/face.png" alt="Personal Face" loading="lazy">
+                        </div>
+
+
+                        <div class="card--description">
+                            <h3>Leandro Cánepa</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ratione earum, hic recusandae quidem praesentium porro voluptatibus explicabo ipsam accusantium deleniti, rem quibusdam repellendus facilis.</p>
+                            <a href="">LinkTree</a>
+                        </div>
+                    </article>
+
+
+
+                </div>
+                
+
+
+
+
+            </section>
 
 
 
         </main>
 
+
+        <footer>
+
+
+            <div class="form--container" id="contact">
+
+                <form action="" class="form--box" id="form">
+
+                    <h3 class="form--title">Contact Us</h3>
+                    <div class="input--container">
+                        <input type="text" id="name" class="input--form">
+                        <label for="name" class="form--label">Name</label>
+                    </div>
+                    <div class="input--container">
+                        <input type="email" id="email" class="input--form">
+                        <label for="email" class="form--label">Email</label>
+                    </div>
+                    <div class="input--container">
+                        <input type="">
+                        <label for="textarea" class="form--label">Tell us what do you think.</label>
+                    </div>
+                    <button type="submit">Send</button>
+                </form>
+
+            </div>
+
+
+
+
+            <div class="social--media">
+                <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);transform: msFilter;"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"></path></svg></a>
+                <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);transform: msFilter; margin:0 1rem;"><path d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM8.339 18.337H5.667v-8.59h2.672v8.59zM7.003 8.574a1.548 1.548 0 1 1 0-3.096 1.548 1.548 0 0 1 0 3.096zm11.335 9.763h-2.669V14.16c0-.996-.018-2.277-1.388-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248h-2.667v-8.59h2.56v1.174h.037c.355-.675 1.227-1.387 2.524-1.387 2.704 0 3.203 1.778 3.203 4.092v4.71z"></path></svg></a>
+            </div>
+
+
+
+        </footer>
+
+
     <!-- Custom JS -->
     <script src="index.js"></script>
+
 
 
 

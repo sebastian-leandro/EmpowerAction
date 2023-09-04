@@ -128,19 +128,18 @@ document.getElementById("post--talent").addEventListener("click", () => {
 
 
 
-// Msg 
+// Message Demo
 
 const backArrow = document.querySelector(".back--arrow");
+backArrow.classList.add("hidden");
 const chatInbox = document.querySelector(".chat--inbox");
 const chatItem = document.querySelectorAll(".chat--inbox--item");
 const chatMsg = document.querySelector(".chat--message");
 
 
-backArrow.classList.add("hidden");
+let resizeTimeout;
 
-
-
-
+function toggleVisibility() {
   chatItem.forEach(chat => {
     chat.addEventListener("click", () => {
       if(window.innerWidth < 768){
@@ -148,18 +147,24 @@ backArrow.classList.add("hidden");
         chatMsg.classList.add("visible");
         backArrow.classList.remove("hidden");
       }
-      });
+    });
   });
-
 
   backArrow.addEventListener("click", () => {
     chatInbox.classList.remove("hidden");
     chatMsg.classList.remove("visible");
     backArrow.classList.add("hidden");
   });
+}
 
+function checkArrow(){
+  clearTimeout(resizeTimeout);
+  resizeTimeout = setTimeout(toggleVisibility, 200);
+}
 
+toggleVisibility();
 
+window.addEventListener("resize", checkArrow);
 
 
 
