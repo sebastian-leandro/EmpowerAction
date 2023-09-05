@@ -39,7 +39,6 @@ async function connectToMetamask() {
 
     function displayAccountNumber(account) {
         document.getElementById("accountBtn").classList.add("highHidden");
-        document.getElementById("bannerMetamaskBtn").classList.add("highHidden");
         document.getElementById("metaMaskBtn").classList.remove("highHidden");
         document.getElementById("metaMaskBtn").classList.add("highShow");
         document.getElementById("accountNumber").innerText = account;
@@ -83,12 +82,8 @@ async function connectToMetamask() {
 }*/
 
 // Function: saveName
-async function saveName() {
-    const account = await getAccount();
-    if (!account) {
-        alert("Por favor, conecta tu wallet de MetaMask para continuar.");
-        return;
-    }
+function saveName() {
+
     const imgPath = "./img/usuario.png";
     const userName = document.getElementById('inputNameRegister').value;
     const pass = document.getElementById("inputPassword").value;
@@ -98,11 +93,10 @@ async function saveName() {
             else if(pass.length < 5) {
                 window.alert("La contraseña debe contener mas de 5 caracteres");
             return}
-    document.getElementById('UserNameWallet').textContent = userName;
-    document.getElementById("UserNameAvatar").src = imgPath;
-    document.getElementById("registerWindow").classList.remove("show");
-    document.getElementById("registerBtn").classList.add("highHidden");
-    return;
+            document.getElementById("registerWindow").classList.remove("show");
+            document.getElementById("registerBtn").classList.add("highHidden");
+            document.getElementById("UserNameAvatar").src = imgPath;
+            document.getElementById('UserNameWallet').textContent = userName;
 }
 
 /*  Function: registerUser

@@ -110,7 +110,9 @@ body {
     height: 60px;
     align-items: center;
     justify-content: space-between;
-    background-color: #100f0fec;
+    background: rgba(0, 0, 0, .8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     position: fixed;
     z-index: 999;
 }
@@ -131,7 +133,7 @@ body {
     cursor: pointer;
 }
 
-.logo span {
+.span--responsive {
     display: none ;
     cursor: pointer;
     font-size: 40px;
@@ -154,12 +156,11 @@ body {
 
 
 .nav--list li a {
-    color: var(--wh-d);
+    color: var(--wh-n);
     font-size: var(--a-s);
     font-weight: var(--a-w);
     transition: var(--tr-n);
     padding: 0.25rem;
-    text-transform: uppercase;
 }
 
 
@@ -173,30 +174,67 @@ body {
     font-weight: var(--a-w);
     color: var(--wh-d);
     cursor: pointer;
-    text-transform: uppercase;
     transition: var(--tr-n);
 }
 
 .secondary--nav {
     position: absolute;
     margin: auto;
-    background-color: #100f0fec;
+    background: rgba(0, 0, 0, .8);
     margin-top: 1rem;
     top: 100%;
+    color: #fff;
     opacity: 0;
     z-index: -1;
     visibility: hidden;
     transition: var(--tr-n);
+    width: 600%;
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
 }
 
 .secondary--nav li {
-    margin: 0.25rem 0;
+    width: 100%;
+    height: 100%;
+    margin: auto;
 }
 
 .secondary--nav li a {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+}
+
+.secondary--nav li a img {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+}
+
+.nav--secondary--title {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav--secondary--title p {
     font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.1rem;
+}
+
+.nav--secondary--title strong {
+    font-size: .8rem;
     font-weight: 500;
-    text-transform: uppercase;
+    width: 85%;
+    margin: auto;
+    text-align: center;
+    color: #888;
 }
 
 .nav--list span {
@@ -282,7 +320,6 @@ body {
     position: relative;
     width: 100%;
     height: 100%;
-    padding: 2rem 0;
 }
 
 
@@ -386,7 +423,6 @@ body {
     font-weight: 600;
     text-rendering: optimizeLegibility;
     padding: 2rem;
-    text-transform: capitalize;
     background-color: #06061b;
     border-radius: 16px;
     width: 70%;
@@ -427,20 +463,21 @@ body {
 .grid--tech--cards {
     display: grid;
     grid-template-rows: repeat(5, .20fr);
-    gap: 1rem;
+    gap: .25rem;
     width: 100%;
     height: 100%;
-    margin: auto;
-    margin: 5vh 0;
 }
 
 
 .tech--item--p {
-    width: 70%;
+    width: 60%;
     display: flex;
-    margin: 4rem 0;
+    margin: 1rem;
     background-color: #1c177e1f;
     color: #fff;
+    padding: 3rem;
+    box-shadow: 0 3px 15px #ff0060;
+    border-radius: 16px;
 }
 
 
@@ -449,19 +486,18 @@ body {
     flex-direction: column;
     height: 100%;
     width: 100%;
+    align-items: center;
 }
 
 .tech--item--text h4 {
     text-align: center;
-    align-self: flex-start;
     padding-left: 0.5rem;
     border-left: 2px solid #8915b3;
+    width: fit-content;
 }
 
 
 .tech--item--text p {
-    align-items: center;
-    justify-content: flex-end;
     text-align: center;
     width: 80%;
     margin-top: 3rem;
@@ -469,16 +505,19 @@ body {
 
 
 .tech--item--p img {
-    width: 12rem;
+    width: 10rem;
     object-fit: cover;
-    height: 12rem;
+    height: 10rem;
     align-self: center;
 }
 
 
-.tech--item--p:first-child, .tech--item--p:nth-child(3), .tech--item--p:last-child {
+.tech--item--p:first-child, .tech--item--p:nth-child(3), .tech--item--p:nth-child(5) {
     margin-left: auto;
+
 }
+
+
 
 /* ----------- End Tech Section ----------- */
 
@@ -489,25 +528,36 @@ body {
 
 /* ----------- Mutual Credits Section ----------- */
 
-
 .mutual--credits {
     width: 100%;
     height: 100%;
     overflow: hidden;
     margin: 5vh auto;
-    padding: 5vh auto;
+    padding: 10vh auto;
 }
 
+
 .grid--mutual--credits--p {
+    display: grid;
+    grid-template-rows: repeat(5, .20fr);
+    gap: 1.5rem;
+    height: 100%;
+    width: 100%;
     margin: 5vh auto;
 }
+
+
+.grid--item--p:nth-child(5) {
+    margin-left: 1.5rem;
+}
+
+
 
 /* Pdf */
 
 .pdf--credits {
     width: 100%;
     height: 100%;
-    margin: 5vh auto;
 }
 
 /* ----------- End Mutual Credits Section ----------- */
@@ -521,7 +571,7 @@ body {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    margin: 10vh auto;
+    margin: 20vh auto;
     position: relative;
 }
 
@@ -573,7 +623,7 @@ body {
 .roadmap--container {
     width: 80%;
     height: 80%;
-    margin: 10vh auto;
+    margin: 15vh auto;
 }
 
 .roadmap--img {
@@ -597,9 +647,6 @@ body {
 }
 
 
-.h2--about--us {
-    margin: 5vh auto;
-}
 
 
 .about--us--container {
@@ -610,7 +657,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, .33fr);
     gap: 0.25rem;
-    margin: 15vh auto;
+    margin: 20vh auto;
 }
 
 
@@ -627,7 +674,7 @@ body {
     justify-content: center;
     position: relative;
     color: #fff;
-    margin: 5vh auto;
+    margin: 10vh auto;
     text-align: center;
     animation: shadow  alternate infinite;
     animation-duration: 5s;
@@ -635,12 +682,12 @@ body {
 }
 
 .card--img {
-    width: 10rem;
-    height: 10rem;
+    width: 14rem;
+    height: 14rem;
     border-radius: 50%;
     border: .5rem solid #1b9c85; 
     position: absolute;
-    top: -35%;  
+    top: -30%;  
     animation: bordershadow infinite alternate;
     animation-duration: 5s;
 }
@@ -828,12 +875,18 @@ footer {
 
 .nav--list li a:hover {   
     transition: var(--tr-n);
-    border-bottom: 1px solid #fff;
 }
 
 .nav--extend:hover {
-    border-bottom: 1px solid #fff;
     transition: var(--tr-n);
+}
+
+.secondary--nav li a:hover {
+    background-color: rgba(255, 255, 255, .1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    outline: 1px solid #ededed77;
+    transition: .5s all ease-in-out;
 }
 
 
