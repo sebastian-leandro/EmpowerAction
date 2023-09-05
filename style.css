@@ -127,6 +127,11 @@ body {
     height: 45px;
 }
 
+.logo span {
+    display: none;
+    cursor: pointer;
+}
+
 .logo img {
     width: 225px;
     height: 45px;
@@ -141,6 +146,7 @@ body {
     color: var(--wh-d);
     user-select: none;
 }
+
 
 
 .nav--list {
@@ -247,6 +253,7 @@ body {
 }
 
 
+
 .hero--banner {
     width: 100%;
     height: 650px;
@@ -346,6 +353,8 @@ body {
 }
 
 
+
+
 .grid--divider--img {
     display: flex;
     height: 100%;
@@ -354,21 +363,28 @@ body {
     justify-content: space-between;
 }
 
+.grid--link--img {
+    position: relative;
+    display: block;
+    margin: auto;
+}
+
 .grid--item--img {
     border: 1px solid #8915b3;
     border-radius: 16px;
-    margin: auto;
-    height: 70%;
+    height: 100%;
     align-items: center;
     display: flex;
     flex-direction: column;
-    width: 35%;
+    width: 100%;
     text-align: center;
     background-color: #0f0b0b26;
     cursor: pointer;
     animation: cards 3s infinite alternate;
     will-change: box-shadow;
     transition: 0.5s all ease;
+    padding: 1.5rem;
+    align-content: space-between;
 }
 
 
@@ -386,12 +402,12 @@ body {
     text-rendering: optimizeLegibility;
     text-align: center;
     font-weight: var(--h3-w);
-    margin-bottom: 1.5rem;
+    margin-top: 1rem;
 }
 
 
-.grid--item--img:first-child, .grid--item--img:nth-child(3) {
-    margin-top: 1rem;
+.grid--link--img:first-child, .grid--link--img:nth-child(3) {
+    margin-top: 5rem;
 }
 
 
@@ -1041,24 +1057,20 @@ footer {
 
 
 
-    .animation--card--section span {
-        width: 450px;
+    .grid--link--img {
+        margin: auto;
     }
-
-    .animation--card--section span:nth-child(3) {
-        top: 32%;
-    }
-
-    .animation--card--section span:nth-child(4) {
-        top: 68%;
-    }
-
 
     .grid--item--img {
-        width: 45%;
-        height: 40%;
+        height: 95%;
+        width: 95%;
+        padding: .88rem;
     }
 
+    .grid--item--img img:nth-child(3) {
+        width: 60%;
+        height: 60%;
+    }
 
 
     .grid--element--card {
@@ -1169,6 +1181,7 @@ footer {
         visibility: hidden;
         transition: 0.5s all ease;
         z-index: 999;
+        height: 100vh;
     }
 
     .logo span {
@@ -1183,6 +1196,12 @@ footer {
         top: 3rem;
         right: 1.5rem;
     }
+
+    .secondary--nav {
+        top: -50%;
+        right: 260%;
+    }
+
 
     .hero--banner {
         height: 750px;
@@ -1258,18 +1277,6 @@ footer {
 
 
 
-    .animation--card--section span:nth-child(3) {
-        top: 20%;
-        left: 41%;
-    }
-
-
-    .animation--card--section span:nth-child(4) {
-        top: 60%;
-        left: 41%;
-    }
-
-
     .grid--column--section {
         grid-template-columns: none;
         grid-template-rows: repeat(3, 48% 2% 48%);
@@ -1280,16 +1287,35 @@ footer {
         gap: 2rem;
     }
 
+    .grid--divider--img {
+        margin: auto;
+    }
+
+
+
+    .grid--link--img {
+        
+        height: 100%;
+        width: 100%;
+    }
+
 
     .grid--item--img {
         height: 100%;
-        width: 45%;
+        width: 75%;
+        margin: auto;
     }
     
+    .grid--link--img:first-child, .grid--link--img:nth-child(3) {
+        margin-top: 0rem;
+    }
+
     .grid--item--img h3 {
         font-size: 1.1rem;
         font-weight: 500;
     }
+
+
 
     
     .divider {
@@ -1362,6 +1388,11 @@ footer {
             height: 200%;
             width: 90%;
             border-bottom: 1px solid #fff;
+            margin: auto;
+        }
+
+        .grid--item--p:nth-child(5){
+            margin-left:auto ;
         }
 
 
@@ -1383,18 +1414,20 @@ footer {
 
         .card--about--us {
             display: flex;
-            flex-direction: row;
-            width: 90%;
+            flex-direction: column;
+            width: 100%;
             height: 100%;
             align-items: center;
             justify-content: space-between;
+            position: relative;
         }
 
         .card--img {
             width: 7rem;
             height: 7rem;
-            position: static;
+            position: absolute;
             border: 0.2rem solid #1b9c85;
+            top: -35%;
         }
 
         .card--description a {
@@ -1438,12 +1471,30 @@ footer {
     
     .grid--element {
         gap: 4rem;
+        justify-content: center;
     }
 
 
+    .grid--divider--img {
+        margin: auto;
+        align-items: center;
+    }
+
+    .grid--link--img {
+        width: 100%;
+        margin: auto 1rem;
+    }
+
+    .grid--item--img img {
+        width: 9rem;
+        height: 9rem;
+    }
+
     .grid--item--img {
-        height: 95%;
-        width: 45%;
+        height: 100%;
+        width: 100%;
+
+
     }
     
     .grid--item--img h3 {

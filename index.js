@@ -84,28 +84,44 @@ sr.reveal(".p--tech--right", {
 
 
 
-
-
-// NavBar 
+// Nav
 
 document.addEventListener("DOMContentLoaded", function() {
+    let isActive = false;
+
     const navExtend = document.querySelector(".nav--extend");
+    const navSubmenu = document.querySelector(".secondary--nav");
 
+    if(!navExtend || !navSubmenu) return;
 
-    navExtend.addEventListener("mouseenter", function() {
-        const navSubmenu = this.querySelector(".secondary--nav");
+    function activateMenu() {
         navSubmenu.classList.add("submenu--active");
-    });
+    }
+
+    function deactivateMenu() {
+        navSubmenu.classList.remove("submenu--active");
+    }
+
+    function toggleMenu() {
+        isActive = !isActive;
+        isActive ? activateMenu() : deactivateMenu();
+    }
+
+    function setupListeners() {
+        if(innerWidth > 768){
+            navExtend.addEventListener("mouseenter", activateMenu);
+            navSubmenu.addEventListener("mouseleave", () => setTimeout(deactivateMenu, 1000));
+        } else {
+            navExtend.removeEventListener("mouseenter", activateMenu);
+            navSubmenu.removeEventListener("mouseleave", deactivateMenu);
+            navExtend.addEventListener("click", toggleMenu);
+        }
+    }
+
+    setupListeners();
+    window.addEventListener("resize", setupListeners);
 });
 
-
-const navSubmenu = document.querySelector(".secondary--nav");
-
-if (navSubmenu) {  
-    navSubmenu.addEventListener("mouseleave", function() {
-        setTimeout(() => { this.classList.remove("submenu--active"); }, 1000);
-    });
-}
 
 // Divider 
 
