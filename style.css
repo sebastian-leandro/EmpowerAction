@@ -1565,7 +1565,7 @@ footer {
 
 
     .grid--element--card {
-        gap: .5;
+        gap: 0;
     }
 
     
