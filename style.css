@@ -1566,8 +1566,8 @@ footer {
 
     .grid--element--card {
         grid-template-rows: repeat(4, .10fr);
-        gap: 1rem !important;
-        margin: 0 !important;
+        gap: 2rem ;
+        margin: 0 ;
     }
 
     
