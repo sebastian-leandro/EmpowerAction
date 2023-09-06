@@ -1471,7 +1471,8 @@ footer {
 
         .header {
             background-position: right;
-            background-attachment: none;
+            background: linear-gradient(to right, #100f0f62, #100f0f62), url(./img/background1.png)no-repeat center/cover;
+            background-attachment: auto;
         }
 
 
