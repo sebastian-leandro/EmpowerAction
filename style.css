@@ -98,7 +98,6 @@ body {
     width: 100%;
     overflow: hidden;
     background: url(./img/background1.png)no-repeat center/cover;
-    background-attachment: fixed;
     position: relative;
     box-shadow: 0 3px 15px #8915b3;
 }
