@@ -97,8 +97,9 @@ body {
     height: 100vh;
     width: 100%;
     overflow: hidden;
-    background: url(./img/background1.png)no-repeat center/cover;
+    background: linear-gradient(#0000006c, #0000006e), url(./img/background1.png)no-repeat center/cover;
     position: relative;
+    background-attachment: fixed;
     box-shadow: 0 3px 15px #8915b3;
 }
 
@@ -1162,6 +1163,7 @@ footer {
     .header {
         background-position: center;
 
+
     }
 
 
@@ -1471,8 +1473,7 @@ footer {
 
         .header {
             background-position: right;
-            background: linear-gradient(to right, #100f0fde, #100f0fe0), url(./img/background1.png)no-repeat center/cover;
-            background-attachment: auto;
+            background-attachment: scroll;
         }
 
 
