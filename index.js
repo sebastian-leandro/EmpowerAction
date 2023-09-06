@@ -139,3 +139,28 @@ function checkDivider() {
 checkDivider()
 
 window.addEventListener("resize", checkDivider);
+
+
+// form 
+
+$(document).ready(function() {
+    $("#message-form").on("submit", function(e) {
+        e.preventDefault();
+        
+        const name = $("#name").val();
+        const email = $("#email").val();
+        const message = $("#message").val();
+        
+        $.ajax({
+            type: "POST",
+            url: "/api/send-email",
+            data: { name, email, message },
+            success: function(response) {
+                $("#response").html("Email sent: " + response);
+            },
+            error: function(error) {
+                $("#response").html("An error occurred: " + error.responseText);
+            }
+        });
+    });
+});

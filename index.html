@@ -24,8 +24,13 @@
 
 
     <!-- Frameworks JS -->
+
     <!-- Scroll Reveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- JQUERY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 
 
 </head>
@@ -748,15 +753,8 @@
 
                         </div>
 
-                        <!-- JS DEMO -->
 
-                        <!-- JQuery -->
-                        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-                        
-                        <!-- Web3 JS -->
-                        <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/4.1.1/web3.min.js"></script>
-
-                        <!-- Custom JS -->
+                        <!-- Custom JS DEMO -->
                         <script src="contract.js"></script>
                         <script src="demo.js"></script>
 
@@ -1015,19 +1013,19 @@
 
             <div class="form--container" id="contact">
 
-                <form action="" class="form--box" id="form">
+                <form  method="post" class="form--box" id="message-form">
 
                     <h3 class="form--title">Contact Us</h3>
                     <div class="input--container">
-                        <input type="text" id="name" class="input--form">
+                        <input type="text" id="name" class="input--form" name="name">
                         <label for="name" class="form--label">Name</label>
                     </div>
                     <div class="input--container">
-                        <input type="email" id="email" class="input--form">
+                        <input type="email" id="email" class="input--form" name="email">
                         <label for="email" class="form--label">Email</label>
                     </div>
                     <div class="input--container">
-                        <input type="">
+                        <textarea name="message" id=""></textarea>
                         <label for="textarea" class="form--label">Tell us what do you think.</label>
                     </div>
                     <button type="submit">Send</button>
@@ -1048,9 +1046,15 @@
         </footer>
 
 
+        <!-- Framework JS -->
+
+
+    <!-- Web3 JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/4.1.1/web3.min.js"></script>
+
+
     <!-- Custom JS -->
     <script src="index.js"></script>
-
 
 
 
