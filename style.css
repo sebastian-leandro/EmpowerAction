@@ -1328,7 +1328,7 @@ footer {
         font-size: 1rem;
         text-align: center;
         width: 80%; 
-        margin: .5rem auto;
+        margin: 0 auto;
     }
 
     .grid--item--p:last-child {
