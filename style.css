@@ -1490,6 +1490,7 @@ footer {
         
     .card--section {
         overflow: hidden;
+        margin: 0 auto;
     }
 
 
@@ -1497,7 +1498,6 @@ footer {
         font-size: 1.7rem;
         font-weight: 700;
         letter-spacing: 0;
-        margin: 1vh 0;
     }
 
 
