@@ -1388,7 +1388,7 @@ footer {
 
 
         .mutual--h2 {
-            margin: 3vh auto;
+            margin: 5vh auto;
             width: 100%;
         }
 
@@ -1504,7 +1504,7 @@ footer {
         grid-template-rows: repeat(3, 30% 10% 55%);
         gap: 0;
         justify-content: center;
-        margin: 2vh auto;
+        margin: auto;
         height: 100%;
         width: 100%;
     }

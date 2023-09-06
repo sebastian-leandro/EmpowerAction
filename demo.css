@@ -60,7 +60,7 @@
 .demo--screen {
     width: 1000px;
     height: 500px;
-    margin: 10vh auto;
+    margin: 5vh auto;
     overflow: hidden;
     position: relative;
     border-radius: 16px;
@@ -1458,10 +1458,6 @@
 
     /* Banner 375px */
 
-
-    .hero--banner {
-        height: 80%;
-    }
 
 
     .hero--banner--demo {
