@@ -1472,8 +1472,8 @@ footer {
     @media screen and (max-width: 500px) {
 
         .header {
-            background-position: right;
-            background-attachment: scroll;
+        background-position: right;
+        background-attachment: scroll;
         }
 
 
@@ -1504,7 +1504,7 @@ footer {
         grid-template-rows: repeat(3, 30% 10% 55%);
         gap: 0;
         justify-content: center;
-        margin: 10vh auto;
+        margin: 2vh auto;
         height: 100%;
         width: 100%;
     }
