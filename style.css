@@ -316,7 +316,7 @@ body {
     font-size: 2.7rem;
     font-weight: 900;
     text-transform: uppercase;
-    margin:3vh 0 ;
+    margin:5vh 0 ;
     letter-spacing: 0.3rem;
     background-color: transparent;
 }
@@ -1087,7 +1087,7 @@ footer {
     /* Mutual Credits */
 
     .grid--container--credits {
-        margin: 5vh auto;
+        margin: 3vh auto;
         width: 100%;
     }
 
@@ -1112,7 +1112,7 @@ footer {
     /* About Us */
 
     .about--us--container {
-        margin: 30vh auto;
+        margin: 15vh auto;
         gap: 0;
         grid-template-columns: .35fr .35fr .35fr;
         place-content: center;
@@ -1383,12 +1383,12 @@ footer {
 
 
         .mutual--credits {
-            margin-top: 15vh;
+            margin-top: 10vh;
         }
 
 
         .mutual--h2 {
-            margin: 10vh auto;
+            margin: 3vh auto;
             width: 100%;
         }
 
