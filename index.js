@@ -24,62 +24,62 @@ const sr = ScrollReveal ({
 sr.reveal(".hero--banner", {
     delay:500,
     origin: "top",
-    distance: "25px",
+    distance: "10px",
 })
 
 
 sr.reveal(".container--card", {
     delay: 500,
     origin:"left",
-    distance: "25px",
+    distance: "10px",
 });
 
 sr.reveal(".text--cards", {
     delay: 500,
     origin: "right",
-    distance: "25px",
+    distance: "10px",
 });
 
 sr.reveal(".demo", {
     delay: 500,
     origin: "bottom",
-    distance: "25px",
+    distance: "10px",
 });
 
 sr.reveal(".mutual--credits", {
     delay:500,
     origin:"top",
-    distance: "25px"
+    distance: "10px"
 });
 
 sr.reveal(".mutual--pdf", {
     delay:500,
     origin:"left",
-    distance: "25px"
+    distance: "10px"
 });
 
 sr.reveal(".divide--cards", {
     delay:500,
     origin: "bottom",
-    distance: "25px"
+    distance: "10px"
 });
 
 sr.reveal(".cards--credits--mutual", {
     delay:500,
     origin: "right",
-    distance: "25px"
+    distance: "10px"
 });
 
 sr.reveal(".p--tech--left", {
     delay: 500,
     origin: "left",
-    distance: "25px"
+    distance: "10px"
 });
 
 sr.reveal(".p--tech--right", {
     delay:500,
     origin: "left",
-    distance: "25px"
+    distance: "10px"
 });
 
 
