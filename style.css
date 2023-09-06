@@ -1266,13 +1266,13 @@ footer {
         grid-template-rows: repeat(3, 30% 15% 55%);
         gap: 0;
         justify-content: center;
-        margin: auto;
+        margin: 0;
         height: 100%;
         width: 100%;
     }  
 
     .grid--element {
-        gap: 2rem;
+        gap: 0rem;
     }
 
     .grid--divider--img {
@@ -1386,7 +1386,7 @@ footer {
 
 
         .mutual--credits {
-            margin-top: 5vh;
+            margin-top: 0vh;
         }
 
 
@@ -1482,7 +1482,7 @@ footer {
 
     .secondary--nav {
         width: 350%;
-        top: -200%;
+        top: -300%;
     }
 
     
@@ -1507,7 +1507,7 @@ footer {
         grid-template-rows: repeat(3, 30% 10% 55%);
         gap: 0;
         justify-content: center;
-        margin: auto;
+        margin: 0;
         height: 100%;
         width: 100%;
     }
@@ -1554,7 +1554,7 @@ footer {
     .divider--grid {
         width: 100%;
         height: 100%;
-        margin: auto;
+        margin: 0;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1569,7 +1569,7 @@ footer {
 
     .grid--element--card {
         grid-template-rows: repeat(4, .10fr);
-        gap: 2rem ;
+        gap: 0rem ;
         margin: 0 ;
     }
 
@@ -1590,7 +1590,7 @@ footer {
     .grid--container--credits {
         grid-template-rows: 20% 5% 75%;
         gap: 0;
-        padding: 1.2rem 0;
+        padding: 0rem 0;
     }
 
     
