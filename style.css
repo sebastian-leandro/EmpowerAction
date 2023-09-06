@@ -1560,7 +1560,7 @@ footer {
 
     .divider {
         width: 100%;
-        margin: 1rem 0;
+        margin: .5rem 0;
     }
 
 
@@ -1568,10 +1568,9 @@ footer {
     .grid--item--p {
         font-size: 0.9rem;
         font-weight: 400;
-        text-transform: lowercase;
         text-align: center;
         width: 90%; 
-        margin: .5rem auto;
+        margin: auto;
     }
 
     .grid--item--p:last-child {
