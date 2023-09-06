@@ -323,7 +323,7 @@ body {
 
 
 .card--section {
-    margin: 0;
+    margin: 5vh auto;
     position: relative;
     width: 100%;
     height: 100%;
@@ -590,7 +590,7 @@ body {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    margin: 20vh auto;
+    margin: 10vh auto;
     position: relative;
 }
 
@@ -642,7 +642,7 @@ body {
 .roadmap--container {
     width: 80%;
     height: 80%;
-    margin: 15vh auto;
+    margin: 10vh auto;
 }
 
 .roadmap--img {
@@ -676,7 +676,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, .33fr);
     gap: 0.25rem;
-    margin: 20vh auto;
+    margin: 16vh auto;
 }
 
 
@@ -1228,10 +1228,6 @@ footer {
 
 
 
-
-
-
-
     
     .logo {
         width: 100%;
@@ -1259,6 +1255,9 @@ footer {
     .main--card--h2 {
         font-size: 2rem;
     }
+
+
+
 
 
 
@@ -1323,6 +1322,10 @@ footer {
     }
 
 
+    .card--section {
+        margin: 0 auto;
+    }
+
     
     .grid--item--p {
         font-size: 1rem;
@@ -1383,7 +1386,7 @@ footer {
 
 
         .mutual--credits {
-            margin-top: 10vh;
+            margin-top: 5vh;
         }
 
 
@@ -1479,7 +1482,7 @@ footer {
 
     .secondary--nav {
         width: 350%;
-        top: -170%;
+        top: -200%;
     }
 
     
@@ -1637,11 +1640,6 @@ footer {
 
 @media screen and (max-width:375px) {
 
-
-
-    .header {
-        background-position: right;
-    }
 
 
     .hero--banner {
