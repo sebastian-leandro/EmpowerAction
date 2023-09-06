@@ -1645,6 +1645,112 @@
 }
 
 
+@media screen and (max-width:375px) {
+    .demo--screen {
+        width: 300px;
+    }
+
+    .nav--work--section {
+        width: 100%;
+        gap: 0;
+        align-content: center;
+    }
+
+    .input--work--section {
+        align-items: center;
+        margin: auto;
+    }
+
+    .post--job {
+        margin: auto;
+    }
+
+    .close--sections {
+        top: 1.9rem;
+        left: 0;
+    }
+
+    .grid--works--item {
+        gap: 1.25rem;
+        grid-template-rows: .50fr .75fr .15fr ;
+    }
+
+    .hero--link--demo button {
+        padding: 0.13rem;
+        letter-spacing: 0;
+        margin: 0.15rem 0.33rem;
+    }
+
+    .sidebar {
+        grid-template-columns: repeat(4,1fr);
+    }
+
+    .sidebar--item:last-child {
+        display: none;
+    }
+
+    .close--transations {
+        top: 0.25rem;
+        right: 0.50rem !important;
+        left: auto;
+    }
+
+    .grid--chat--container {
+        overflow: hidden;
+    }
+
+    .chat--inbox {
+        overflow: hidden;
+    }
+
+    .chat--inbox--body {
+        overflow-x: hidden;
+    }
+
+    .register {
+        width: 290px;
+        display: flex;
+
+    }
+
+    .close--register {
+        right: 0.25rem;
+        top: 0.25rem ;
+        left: auto; 
+        padding: 0.20rem 0.33rem !important;
+    }
+
+    .window--post {
+        width: 95%;
+        height: 100%;
+        display: flex;
+    }
+
+    .window--inputs {
+        width: 250px;
+        height: 200px;
+        position: relative;
+    }
+
+    .window--inputs input {
+        width: 60%;
+    }
+
+    .close--post {
+        top: 0.25rem;
+        right: 0.25rem;
+        margin: 0;
+        left: auto;
+    }
+
+    .post--window {
+        padding: 0.44rem;
+        margin: 0;
+    }
+
+}
+
+
 
 
 /* End Demo */
