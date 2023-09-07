@@ -1187,8 +1187,11 @@ footer {
         height: 100vh;
     }
 
-    .nav--icon {
-        display: block;
+    .nav--icon {   
+        position: static;
+        z-index: 0;
+        visibility: visible;
+        opacity: 1;
         transition: 0.5s all ease;
         margin-right: 0.5rem;
     }
