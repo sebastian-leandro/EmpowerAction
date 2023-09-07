@@ -1087,6 +1087,9 @@ footer {
         background-attachment: scroll;
     }
 
+    .logo {
+        width: 100%;
+    }
 
     .nav--list {
         flex-direction: column;
@@ -1133,15 +1136,6 @@ footer {
         height: 750px;
     }
 
-
-
-
-/* Add Styles */
-
-    
-    .logo {
-        width: 100%;
-    }
 
     .hero--banner h1 {
         font-size: 1.5rem;
@@ -1232,9 +1226,8 @@ footer {
         margin: 0 auto;
     }
 
-
-
-        /* Tech Section */
+    
+    /* Tech Section */
 
 
     .tech--h2 {
@@ -1473,7 +1466,7 @@ footer {
         font-weight: 400;
         text-align: center;
         width: 90%; 
-        margin: 1rem auto;
+        margin: .33rem auto;
     }
 
     .grid--item--p:first-child {
@@ -1495,7 +1488,7 @@ footer {
 
     .grid--mutual--credits--p {
         padding: 1rem auto;
-        margin: 1rem auto;
+        margin: .33rem auto;
     }
 
     
