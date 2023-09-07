@@ -1254,7 +1254,7 @@ footer {
     .grid--element--card {
         display: flex;
         flex-direction: column;
-        gap: 0.5rem;
+        gap: 10px;
         margin: auto;
         justify-content: center;
         align-items: center;
@@ -1329,7 +1329,7 @@ footer {
     .grid--mutual--credits--p {
         display: flex;
         flex-direction: column;
-        gap: 1rem;
+        gap: 10px;
         margin: auto;
         justify-content: space-evenly;
         align-content: center;
