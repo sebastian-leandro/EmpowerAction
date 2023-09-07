@@ -1169,7 +1169,7 @@ footer {
 
     .grid--column--section {
         grid-template-columns: none;
-        grid-template-rows: repeat(3, 30% 15% 55%);
+        grid-template-rows: 30% 15% 55%;
         gap: 0;
         justify-content: center;
         margin: 0;
@@ -1304,8 +1304,16 @@ footer {
     .grid--mutual--credits--p {
         grid-template-rows: repeat(5, 1fr);
         gap: 0.33rem;
-        margin: 2vh auto;
-        padding: 2rem 0 ;
+        margin: 1rem auto;
+        padding: 1rem auto;
+    }
+
+    .grid--item--p:first-child {
+        margin-top: 0;
+    }
+
+    .grid--item--p:last-child {
+        margin-bottom: 0;
     }
 
 
@@ -1490,6 +1498,11 @@ footer {
         grid-template-rows: 20% 5% 75%;
         gap: 0;
         padding: 0;
+    }
+
+    .grid--mutual--credits--p {
+        padding: 1rem auto;
+        margin: 1rem auto;
     }
 
     
