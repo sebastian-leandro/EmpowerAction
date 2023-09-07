@@ -1494,10 +1494,15 @@ footer {
         align-items: center;
     }
 
+
+    .roadmap {
+        margin: 1vh auto;
+    }
     
     .roadmap--container {
         width: 90%;
         height: 90%;
+        margin: 1vh auto;
     }
 
 
