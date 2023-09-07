@@ -1114,7 +1114,7 @@ footer {
 @media screen and (max-width: 768px) {
 
     .header {
-        background-position: center;
+        background-position: right;
         background-attachment: scroll;
     }
 
