@@ -1305,10 +1305,11 @@ footer {
 
 
     .grid--mutual--credits--p {
-        grid-template-rows: repeat(5, .5fr);
+        grid-template-rows: repeat(5, auto);
         gap: 0;
         margin: auto;
-        place-items: center;
+        justify-content: center;
+        align-content: center;
         padding: 1rem 0;
     }
 
@@ -1321,11 +1322,11 @@ footer {
     }
 
     .grid--item--p:first-child {
-        margin-top: 0;
+        margin-bottom: 0;
     } 
 
     .grid--item--p:last-child {
-        margin-bottom: 0;
+        margin-top: 0;
     }
 
 
