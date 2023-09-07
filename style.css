@@ -1019,7 +1019,6 @@ footer {
     /* Mutual Credits */
 
     .grid--container--credits {
-        margin: 3vh auto;
         width: 100%;
     }
 
@@ -1469,7 +1468,7 @@ footer {
 
 
     .grid--container--credits {
-        grid-template-rows: 20% 5% 50%;
+        grid-template-rows: 50% 10% 40%;
         gap: 0;
         padding: 0;
     }
