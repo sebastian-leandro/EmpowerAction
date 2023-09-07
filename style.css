@@ -566,7 +566,7 @@ body {
 
 .grid--mutual--credits--p {
     display: grid;
-    grid-template-rows: repeat(5, .20fr);
+    grid-template-rows: repeat(5, auto);
     gap: 1.5rem;
     height: 100%;
     width: 100%;
@@ -1482,7 +1482,7 @@ footer {
     /* Mutual Credits */
 
     .grid--container--credits {
-        grid-template-rows: 20% 5% 75%;
+        grid-template-rows: 20% 5% 50%;
         gap: 0;
         padding: 0;
     }
@@ -1490,6 +1490,8 @@ footer {
     .grid--mutual--credits--p {
         padding: 1rem 0;
         margin: auto;
+        justify-content: center;
+        align-items: center;
     }
 
     
