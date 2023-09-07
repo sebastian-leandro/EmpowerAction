@@ -434,7 +434,7 @@ body {
 
 .grid--element--card {
     display: grid;
-    grid-template-rows: repeat(4, .25fr);
+    grid-template-rows: repeat(4, auto);
     gap: 1.5rem;
     height: 100%;
     width: 100%;
@@ -1220,7 +1220,7 @@ footer {
     }
 
     .grid--element--card {
-        grid-template-rows: repeat(4, 1fr);
+        grid-template-rows: repeat(4, auto);
         gap: 0 ;
         margin: auto;
         padding: 2rem auto;
