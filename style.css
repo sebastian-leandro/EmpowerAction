@@ -1274,7 +1274,8 @@ footer {
 
 
     .mutual--credits {
-        margin: 0;
+        margin: 1rem auto;
+        padding: 1rem;
     }
 
 
@@ -1466,9 +1467,6 @@ footer {
     /* Mutual Credits */
 
 
-    .mutual--credits {
-        padding: 0;
-    }
 
     .grid--container--credits {
         grid-template-rows: 20% 5% 50%;
