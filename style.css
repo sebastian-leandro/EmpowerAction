@@ -1229,12 +1229,9 @@ footer {
         font-size: 1rem;
         text-align: center;
         width: 80%; 
-        margin: .5rem auto;
+        margin: 0 auto;
     }
 
-    .grid--item--p:last-child {
-        margin-bottom: 0;
-    }
 
 
         /* Tech Section */
@@ -1311,15 +1308,7 @@ footer {
     .grid--item--p {
         margin: 0;
     }
-/*
-    .grid--item--p:first-child {
-        margin-top: 0;
-    }
 
-    .grid--item--p:last-child {
-        margin-bottom: 0;
-    }
-*/
 
     /* RoadMap */
 
