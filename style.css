@@ -928,10 +928,6 @@ footer {
 
 
 
-
-
-
-
 /* ----------- Responsive Designe (1350px) ----------- */
 
 
@@ -940,11 +936,6 @@ footer {
         height: 95%;
     }
 }
-
-
-
-
-
 
 
 /* ----------- Responsive Designe (1280px) ----------- */
@@ -972,14 +963,6 @@ footer {
 }
 
 
-
-
-
-
-
-
-
-
 /* ----------- Responsive Designe (1024px) ----------- */
 
 
@@ -1000,11 +983,7 @@ footer {
     }
 
 
-
-
     /* Cards */
-
-
 
     .grid--link--img {
         margin: auto;
@@ -1059,9 +1038,6 @@ footer {
     }
 
 
-
-
-
     /* About Us */
 
     .about--us--container {
@@ -1101,22 +1077,14 @@ footer {
 }
 
 
-
-
-
-
 /* ----------- Responsive Designe  (768px) ----------- */
-
-
-
 
 
 @media screen and (max-width: 768px) {
 
     .header {
         background-position: center;
-
-
+        background-attachment: scroll;
     }
 
 
@@ -1199,10 +1167,6 @@ footer {
     }
 
 
-
-
-
-
     .grid--column--section {
         grid-template-columns: none;
         grid-template-rows: repeat(3, 30% 15% 55%);
@@ -1220,8 +1184,6 @@ footer {
     .grid--divider--img {
         margin: auto;
     }
-
-
 
     .grid--link--img {
         
@@ -1245,8 +1207,6 @@ footer {
         font-weight: 500;
     }
 
-
-
     .divider--grid {
         width: 100%;
         height: 100%;
@@ -1256,19 +1216,15 @@ footer {
         justify-content: center;
     }
 
-
-    
     .divider {
         width: 100%;
         height: fit-content;
     }
 
-
     .card--section {
         margin: 0 auto;
     }
-
-    
+ 
     .grid--item--p {
         font-size: 1rem;
         text-align: center;
@@ -1284,128 +1240,124 @@ footer {
         /* Tech Section */
 
 
-        .tech--h2 {
-            text-align: center;
-            transform: translateX(0);
-        }
+    .tech--h2 {
+        text-align: center;
+        transform: translateX(0);
+    }
 
 
-        .tech--item--p {
-            width: 90%;
-            margin: 1rem auto;
-            flex-direction: column;
-        }
+    .tech--item--p {
+        width: 90%;
+        margin: 1rem auto;
+        flex-direction: column;
+    }
     
-        .tech--item--p img {
-            width: 5rem;
-            height: 5rem;
-            margin-top: 1rem;
-        }
+    .tech--item--p img {
+        width: 5rem;
+        height: 5rem;
+        margin-top: 1rem;
+    }
     
-        .tech--item--text {
-            margin: auto;
-            align-items: center;
-        }
+    .tech--item--text {
+        margin: auto;
+        align-items: center;
+    }
     
-        .tech--item--text h4 {
-            margin: auto;
-        }
+    .tech--item--text h4 {
+        margin: auto;
+    }
     
     
-        .tech--item--p:first-child, .tech--item--p:nth-child(3), .tech--item--p:last-child {
-            margin: auto;
-        }
+    .tech--item--p:first-child, .tech--item--p:nth-child(3), .tech--item--p:last-child {
+        margin: auto;
+    }
+
+   
+    .tech--section {
+        padding: 2rem 0;
+    }
 
 
 
-        .tech--section {
-            padding: 2rem 0;
-        }
+    /* Mutual Credits */
+
+
+    .mutual--credits {
+        margin-top: 0vh;
+    }
+
+
+    .mutual--h2 {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+
+    .pdf--credits {
+        height: 100%;
+        width: 90%;
+        border-bottom: 1px solid #fff;
+        margin: auto;
+    }
+
+
+    .grid--mutual--credits--p {
+        grid-template-rows: repeat(5, 1fr);
+        gap: 0.33rem;
+        margin: 2vh auto;
+        padding: 2rem 0 ;
+    }
+
+
+    /* RoadMap */
+
+    .roadmap--container {
+        width:100%;
+        height: 100%;
+    }
+
+
+    /* About Us */
+
+    .about--us--container {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .card--about--us {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        margin: 5rem 0;
+    }
+
+    .card--img {
+        width: 7rem;
+        height: 7rem;
+        position: absolute;
+        border: 0.2rem solid #1b9c85;
+        top: -35%;
+    }
+
+    .card--description a {
+        position: static;
+    }
 
 
 
-        /* Mutual Credits */
+    /* Footer */
 
-
-        .mutual--credits {
-            margin-top: 0vh;
-        }
-
-
-        .mutual--h2 {
-            margin: 0 auto;
-            width: 100%;
-        }
-
-
-        .pdf--credits {
-            height: 100%;
-            width: 90%;
-            border-bottom: 1px solid #fff;
-            margin: auto;
-        }
-
-
-        .grid--mutual--credits--p {
-            grid-template-rows: repeat(5, 1fr);
-            gap: 0.33rem;
-            margin: 2vh auto;
-            padding: 2rem 0 ;
-        }
-
-
-
-        /* RoadMap */
-
-        .roadmap--container {
-            width:100%;
-            height: 100%;
-        }
-
-
-        /* About Us */
-
-        .about--us--container {
-            display: flex;
-            flex-direction: column;
-            width: 90%;
-        }
-
-        .card--about--us {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            height: 100%;
-            align-items: center;
-            justify-content: space-between;
-            position: relative;
-            margin: 5rem 0;
-        }
-
-        .card--img {
-            width: 7rem;
-            height: 7rem;
-            position: absolute;
-            border: 0.2rem solid #1b9c85;
-            top: -35%;
-        }
-
-        .card--description a {
-            position: static;
-        }
-
-
-
-        /* Footer */
-
-        .form--container {
-            width: 90%;
-        }
+    .form--container {
+        width: 90%;
+    }
     
     
 }
-
-
 
 
 
@@ -1416,10 +1368,10 @@ footer {
 
     @media screen and (max-width: 500px) {
 
-        .header {
+    .header {
         background-position: right;
         background-attachment: scroll;
-        }
+    }
 
 
     .secondary--nav {
@@ -1428,8 +1380,7 @@ footer {
     }
 
     
-    
-        
+
     .card--section {
         overflow: hidden;
         margin: 0 auto;
@@ -1446,7 +1397,7 @@ footer {
 
     .grid--column--section {
         grid-template-columns: none;
-        grid-template-rows: repeat(3, 30% 10% 55%);
+        grid-template-rows: 30% 10% 55%;
         gap: 0;
         justify-content: center;
         margin: 0;
@@ -1463,7 +1414,6 @@ footer {
     .grid--divider--img {
         align-items: center;
     }
-
 
 
     .grid--link--img {
@@ -1510,9 +1460,10 @@ footer {
 
 
     .grid--element--card {
-        grid-template-rows: repeat(4, .10fr);
-        gap: 0rem ;
-        margin: 0 ;
+        grid-template-rows: repeat(4, 1fr);
+        gap: 0 ;
+        margin: 0;
+        padding: 1rem auto;
     }
 
     
@@ -1521,7 +1472,7 @@ footer {
         font-weight: 400;
         text-align: center;
         width: 90%; 
-        margin: 0 !important;
+        margin: 1rem auto;
     }
 
     .grid--item--p:last-child {
@@ -1529,15 +1480,15 @@ footer {
     }
 
 
+    /* Mutual Credits */
+
     .grid--container--credits {
         grid-template-rows: 20% 5% 75%;
         gap: 0;
-        padding: 0rem 0;
+        padding: 0;
     }
 
     
-
-
     .roadmap--container {
         width: 90%;
         height: 90%;
@@ -1566,11 +1517,6 @@ footer {
     .form--box textarea {
         width: 85%;
     }
-
-
-    
-
-
 
 }
 
@@ -1628,10 +1574,6 @@ footer {
         line-height: 1;
     }
 
-
-
-
-
     .tech--item--p {
         width: 90% ;
         padding: 1rem;
@@ -1660,21 +1602,11 @@ footer {
         padding: 1.2rem 0;
     }
 
-
-
-
-
-
 }
 
 
 
-
-
 /* ----------- Animations ----------- */
-
-
-
 
 
 /* Cards Animations */
