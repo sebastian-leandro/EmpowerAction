@@ -1218,12 +1218,25 @@ footer {
     .card--section {
         margin: 0 auto;
     }
+
+    .grid--element--card {
+        grid-template-rows: repeat(4, 1fr);
+        gap: 0 ;
+        margin: auto;
+        padding: 2rem auto;
+        align-content: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+    }
  
     .grid--item--p {
         font-size: 1rem;
         text-align: center;
         width: 80%; 
         margin: 0 auto;
+        align-items: center;
+        justify-items: center;
     }
 
     
@@ -1462,16 +1475,6 @@ footer {
     .divider {
         width: 100%;
         margin: 0;
-    }
-
-
-    .grid--element--card {
-        grid-template-rows: repeat(4, .5fr);
-        gap: 0 ;
-        margin: auto;
-        padding: 2rem auto;
-        height: 100%;
-        width: 100%;
     }
 
     
