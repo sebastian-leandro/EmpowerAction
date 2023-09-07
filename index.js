@@ -1,3 +1,5 @@
+// Nav Span
+
 const nav = document.querySelector(".nav--list");
 const openButton = document.getElementById("open--nav");
 const closeButton = document.getElementById("close-nav");
@@ -13,78 +15,7 @@ closeButton.addEventListener("click", ()=> {
     openButton.classList.remove("hidden")
 })
 
-
-// Scroll Reveal 
-
-const sr = ScrollReveal ({
-    duration: 750,
-    reset: true,
-})
-
-sr.reveal(".hero--banner", {
-    delay:500,
-    origin: "top",
-    distance: "10px",
-})
-
-
-sr.reveal(".container--card", {
-    delay: 500,
-    origin:"left",
-    distance: "10px",
-});
-
-sr.reveal(".text--cards", {
-    delay: 500,
-    origin: "right",
-    distance: "10px",
-});
-
-sr.reveal(".demo", {
-    delay: 500,
-    origin: "bottom",
-    distance: "10px",
-});
-
-sr.reveal(".mutual--credits", {
-    delay:500,
-    origin:"top",
-    distance: "10px"
-});
-
-sr.reveal(".mutual--pdf", {
-    delay:500,
-    origin:"left",
-    distance: "10px"
-});
-
-sr.reveal(".divide--cards", {
-    delay:500,
-    origin: "bottom",
-    distance: "10px"
-});
-
-sr.reveal(".cards--credits--mutual", {
-    delay:500,
-    origin: "right",
-    distance: "10px"
-});
-
-sr.reveal(".p--tech--left", {
-    delay: 500,
-    origin: "left",
-    distance: "10px"
-});
-
-sr.reveal(".p--tech--right", {
-    delay:500,
-    origin: "left",
-    distance: "10px"
-});
-
-
-
-// Nav
+// Sub Nav
 
 document.addEventListener("DOMContentLoaded", function() {
     let isActive = false;
@@ -125,7 +56,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // Divider 
 
-
 function checkDivider() {
     const dividers = document.querySelectorAll(".divider--responsive");
     const src = window.innerWidth <= 768 ? "./img/responsiveDivider.svg" : "./img/divide1.svg";
@@ -134,10 +64,7 @@ function checkDivider() {
         divider.src = src;
     });
 }
-
-
 checkDivider()
-
 window.addEventListener("resize", checkDivider);
 
 
@@ -163,4 +90,66 @@ $(document).ready(function() {
             }
         });
     });
+});
+
+
+// Scroll Reveal 
+
+const sr = ScrollReveal ({
+    duration: 500,
+    reset: true,
+})
+
+sr.reveal(".hero--banner", {
+    delay:500,
+    origin: "top",
+    distance: "10px",
+})
+
+sr.reveal(".container--card", {
+    delay: 500,
+    origin:"left",
+    distance: "10px",
+});
+
+sr.reveal(".text--cards", {
+    delay: 500,
+    origin: "right",
+    distance: "10px",
+});
+
+sr.reveal(".mutual--credits", {
+    delay:500,
+    origin:"top",
+    distance: "10px"
+});
+
+sr.reveal(".mutual--pdf", {
+    delay:500,
+    origin:"left",
+    distance: "10px"
+});
+
+sr.reveal(".divide--cards", {
+    delay:500,
+    origin: "bottom",
+    distance: "10px"
+});
+
+sr.reveal(".cards--credits--mutual", {
+    delay:500,
+    origin: "right",
+    distance: "10px"
+});
+
+sr.reveal(".p--tech--left", {
+    delay: 500,
+    origin: "left",
+    distance: "10px"
+});
+
+sr.reveal(".p--tech--right", {
+    delay:500,
+    origin: "left",
+    distance: "10px"
 });
