@@ -16,9 +16,9 @@
 }
 
 *::selection {
-    background-color: var(--gr-n);
-    color: var(--wh-n);
-}
+    background-color: #43174f;
+    color: #00ffbd;
+  }
 
 
 
@@ -570,7 +570,7 @@ body {
     gap: 1.5rem;
     height: 100%;
     width: 100%;
-    margin: 5vh auto;
+    margin: auto;
 }
 
 
@@ -1299,7 +1299,19 @@ footer {
     }
 
     .grid--item--p {
-        margin: 0;
+        font-size: 0.9rem;
+        font-weight: 400;
+        text-align: center;
+        width: 90%; 
+        margin: .33rem auto;
+    }
+
+    .grid--item--p:first-child {
+        margin-top: 0;
+    } 
+
+    .grid--item--p:last-child {
+        margin-bottom: 0;
     }
 
 
@@ -1388,7 +1400,6 @@ footer {
     }
 
 
-
     .grid--column--section {
         grid-template-columns: none;
         grid-template-rows: 30% 10% 55%;
@@ -1461,22 +1472,6 @@ footer {
     }
 
     
-    .grid--item--p {
-        font-size: 0.9rem;
-        font-weight: 400;
-        text-align: center;
-        width: 90%; 
-        margin: .33rem auto;
-    }
-
-    .grid--item--p:first-child {
-        margin-top: 0;
-    } 
-
-    .grid--item--p:last-child {
-        margin-bottom: 0;
-    }
-
 
     /* Mutual Credits */
 

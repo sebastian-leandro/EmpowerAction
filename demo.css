@@ -29,11 +29,6 @@
 
 /* Normalize */
 
-*::selection {
-  background-color: #43174f;
-  color: #00ffbd;
-}
-
 
 * {
   margin: 0;
