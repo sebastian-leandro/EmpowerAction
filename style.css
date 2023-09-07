@@ -876,10 +876,6 @@ footer {
 }
 
 
-
-
-
-
 /* Cards Section */
 
 
@@ -904,10 +900,6 @@ footer {
     transform: scale(1.1);
     transition: 0.5s all ease-in-out;
 }
-
-
-
-
 
 
 
@@ -1224,6 +1216,8 @@ footer {
         flex-direction: column;
         gap: 0.5rem;
         margin: auto;
+        justify-content: center;
+        align-items: center;
     }
 
     
@@ -1373,11 +1367,6 @@ footer {
 
     @media screen and (max-width: 500px) {
 
-    .header {
-        background-position: right;
-        background-attachment: scroll;
-    }
-
 
     .secondary--nav {
         width: 350%;
@@ -1468,7 +1457,7 @@ footer {
 
 
     .grid--container--credits {
-        grid-template-rows: 45% 10% 45%;
+        grid-template-rows: 40% 15% 45%;
         gap: 0;
         padding: 0;
     }
