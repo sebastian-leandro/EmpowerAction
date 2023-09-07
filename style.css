@@ -104,6 +104,9 @@ body {
 }
 
 
+
+/* Nav */
+
 .nav {
     display: flex;
     width: 100%;
@@ -127,11 +130,6 @@ body {
     height: 45px;
 }
 
-.nav--icon {
-    display: none;
-    cursor: pointer;
-    color: #fff;
-}
 
 .logo img {
     width: 225px;
@@ -140,10 +138,11 @@ body {
 }
 
 .nav--icon {
+    visibility: hidden;
     opacity: 0;
     z-index: -1;
-    visibility: hidden;
     position: absolute;
+    right: 0;
     cursor: pointer;
     font-size: 40px;
     font-weight: 700;
@@ -173,6 +172,8 @@ body {
     padding: 0.25rem;
 }
 
+
+/* Sub nav */
 
 .nav--extend {
     position: relative;
@@ -257,6 +258,10 @@ body {
 }
 
 
+
+
+
+/* Hero Banner */
 
 .hero--banner {
     width: 100%;
@@ -597,51 +602,6 @@ body {
     position: relative;
 }
 
-.animation--card--section {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    overflow: hidden;
-    z-index: -9;
-}
-
-
-.animation--card--section span {
-    width: 300px;
-    height: 5px;
-    z-index: -9;
-    position: absolute;
-    top: 50%;
-    left: 15%;
-    right: 0;
-    border-radius: 16px;
-    box-shadow: 0 4px 15px #8915b3;
-}
-
-
-.animation--card--section span:first-child {
-    transform: rotate(33deg);
-}
-
-.animation--card--section span:nth-child(2){
-    left: 10%;
-    top: 17%;
-    transform: rotate(45deg);
-}
-
-.animation--card--section span:nth-child(3){
-    left: 11%;
-    top: 80%;
-    transform: rotate(91deg);
-}
-
-.animation--card--section span:nth-child(4){
-    left: 90%;
-    top: 80%;
-    transform: rotate(150deg);
-}
-
-
 .roadmap--container {
     width: 80%;
     height: 80%;
@@ -780,6 +740,9 @@ footer {
 }
 
 
+/* Form */
+
+
 .form--container {
     width: 600px;
     height: 550px;
@@ -872,12 +835,7 @@ footer {
 }
 
 
-
-
-
-
-
-
+/* Social Media End */
 
 .social--media {
     display: flex;
@@ -909,14 +867,6 @@ footer {
     -webkit-backdrop-filter: blur(20px);
     outline: 1px solid #ededed77;
     transition: .5s all ease-in-out;
-}
-
-
-.submenu--active {
-    z-index: 0;
-    visibility: visible;
-    opacity: 1;
-    display: block;
 }
 
 
@@ -1187,6 +1137,15 @@ footer {
         height: 100vh;
     }
 
+
+    .nav--list span {
+        display: block;
+        position: absolute;
+        top: 3rem;
+        right: 1.5rem;
+    }
+
+
     .nav--icon {   
         position: static;
         z-index: 0;
@@ -1194,13 +1153,6 @@ footer {
         opacity: 1;
         transition: 0.5s all ease;
         margin-right: 0.5rem;
-    }
-
-    .nav--list span {
-        display: block;
-        position: absolute;
-        top: 3rem;
-        right: 1.5rem;
     }
 
     .secondary--nav {
@@ -1217,22 +1169,6 @@ footer {
 
 
 /* Add Styles */
-
-
-
-    .show {
-        opacity: 1;
-        visibility: visible;
-        transition: 0.5s all ease;
-    }
-
-    .hidden {
-        opacity: 0;
-        visibility: hidden;
-        transition: 0.5s all ease;
-    }
-
-
 
     
     .logo {
@@ -1740,31 +1676,6 @@ footer {
 
 
 
-/* Demo Animations */
-
-
-
-@keyframes spin {
-    from {
-        transform: rotate(360deg);
-    }
-    to {
-        transform: rotate(0deg);
-    }
-  }
-
-
-@keyframes spin {
-    from {
-      transform: rotate(360deg);
-    }
-    to {
-      transform: rotate(0deg);
-    }
-  }
-
-
-
 
 /* Cards Animations */
 
@@ -1803,4 +1714,28 @@ footer {
     50%, 100% {
         box-shadow: 0 4px 24px #1b9c85;
     }
+}
+
+
+
+/* ADD CLASSED */
+
+
+.show {
+    opacity: 1;
+    visibility: visible;
+    transition: 0.5s all ease;
+}
+
+.submenu--active {
+    z-index: 0;
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s all ease;
 }
