@@ -1222,7 +1222,7 @@ footer {
     .grid--element--card {
         grid-template-rows: repeat(4, auto);
         gap: .50rem;
-        padding: 2rem auto;
+        padding: 1rem auto;
         align-content: center;
         justify-content: center;
         height: 100%;
@@ -1285,7 +1285,7 @@ footer {
 
 
     .mutual--credits {
-        margin-top: 0vh;
+        margin: 0;
     }
 
 
@@ -1309,7 +1309,6 @@ footer {
         margin: auto;
         justify-content: center;
         align-content: center;
-        padding: 1rem 0;
     }
 
     .grid--item--p {
@@ -1317,21 +1316,21 @@ footer {
         font-weight: 400;
         text-align: center;
         width: 90%; 
-        margin: auto;
+        margin: 1rem auto;
     }
 
 
     /* RoadMap */
 
     .roadmap {
-        margin: 5rem auto;
+        margin: 1rem auto;
     }
 
 
     .roadmap--container {
         width:100%;
         height: 100%;
-        margin: 5rem auto;
+        margin: 1rem auto;
     }
 
     /* About Us */
@@ -1480,7 +1479,7 @@ footer {
 
 
     .mutual--credits {
-        padding: 1rem;
+        padding: 0;
     }
 
     .grid--container--credits {
@@ -1490,21 +1489,17 @@ footer {
     }
 
     .grid--mutual--credits--p {
-        padding: 1rem 0;
+        padding: 0;
         margin: auto;
         justify-content: center;
         align-items: center;
     }
 
 
-    .roadmap {
-        margin: 1vh auto;
-    }
     
     .roadmap--container {
         width: 90%;
         height: 90%;
-        margin: 1vh auto;
     }
 
 
