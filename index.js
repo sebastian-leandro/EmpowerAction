@@ -92,6 +92,31 @@ $(document).ready(function() {
     });
 });
 
+// Label 
+
+const labelName = document.getElementById("nameLabel");
+const labelEmail = document.getElementById("emailLabel");
+const labelArea = document.getElementById("areaLabel");
+
+
+function updateLabel(labelElement, inputElement){
+    if (inputElement.value){
+        labelElement.classList.add("label");
+    } else {
+        labelElement.classList.remove("label");
+    }
+};
+
+document.getElementById("name").addEventListener("keyup", function(){
+    updateLabel(labelName, this);
+});
+document.getElementById("email").addEventListener("keyup", function(){
+    updateLabel(labelEmail, this);
+});
+document.getElementById("textarea").addEventListener("keyup", function(){
+    updateLabel(labelArea, this);
+});
+
 
 // Scroll Reveal 
 
