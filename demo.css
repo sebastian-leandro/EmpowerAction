@@ -393,7 +393,7 @@
 
 
 .aside--demo {
-    position: fixed;
+    position: absolute;
     left: 1rem;
     bottom: 1rem;
     top: 5rem;
@@ -1138,7 +1138,7 @@
 
 
 
-  
+
 
 /* Adding JS Class */
 
@@ -1425,7 +1425,7 @@
     /* Aside 375px */
 
     .aside--demo {
-        position: fixed;
+        position: absolute;
         bottom: 0;
         left: 0;
         top: auto;
