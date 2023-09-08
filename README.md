@@ -1,26 +1,47 @@
-# Nombre del Proyecto Front-End
+<p align="center">
+  <img src="https://github.com/EmpowerAction/Front-End/blob/master/img/icono/1.png" alt="Icono de la Plataforma" width="1200"/>
+</p>
+
+# EmpowerAction : Conectando las Finanzas Descentralizadas con la Actividad Real
+
 
 ## Introducción
 
-Breve descripción del proyecto.
+Impulsando una nueva era de productividad. Conectando talentos y personas de forma transparente y sin intermediación. 
+Live Demo Disponible
 
 ## Acceso
 
-La interfaz está disponible en [www.tusitio.com](#).
+La interfaz está disponible en [empoweraction.network](https://www.empoweraction.network).
 
-## Capturas de pantalla
+## Imagenes
 
-![Captura1](url_de_la_imagen_1)
-![Captura2](url_de_la_imagen_2)
+
+<p align="center">
+  <img src="https://github.com/EmpowerAction/Front-End/blob/master/img/E1.png)" alt="Icono de la Plataforma" width="1200"/>
+</p>
+
+<p align="center">
+  <img src="https://github.com/EmpowerAction/Front-End/blob/master/img/E2.png" alt="Icono de la Plataforma" width="1200"/>
+</p>
 
 ## Funcionalidades Principales
 
-- Funcionalidad 1
-- Funcionalidad 2
-- Funcionalidad 3
+Conectar con metamaks.
+Registrarte. 
+Live Demo.
 
-## Cómo Empezar
+## Misión & Valores 
 
-```bash
-npm install
-npm start
+<p align="center">
+  <img src="https://github.com/EmpowerAction/Front-End/blob/master/img/E2.png" alt="Icono de la Plataforma" width="1200"/>
+</p>
+
+## Tecnologías utilizadas
+
+HTML
+CSS
+JavaScript
+Node.js
+
+
