@@ -18,7 +18,7 @@ La interfaz está disponible en [empoweraction.network](https://www.empoweractio
 
 
 <p align="center">
-  <img src="https://github.com/EmpowerAction/Front-End/blob/master/img/E1.png)" alt="Icono de la Plataforma" width="1200"/>
+  <img src="https://github.com/EmpowerAction/Front-End/blob/master/img/E1.png" alt="Icono de la Plataforma" width="1200"/>
 </p>
 
 <p align="center">
@@ -34,7 +34,7 @@ Live Demo.
 ## Misión & Valores 
 
 <p align="center">
-  <img src="https://github.com/EmpowerAction/Front-End/blob/master/img/E2.png" alt="Icono de la Plataforma" width="1200"/>
+  <img src="https://github.com/EmpowerAction/Front-End/blob/master/img/E3.png" alt="Icono de la Plataforma" width="1200"/>
 </p>
 
 ## Tecnologías utilizadas
