@@ -1320,32 +1320,27 @@ footer {
     }
 
 
+    .grid--container--credits {
+        grid-template-rows: 15% 85%;
+        gap: .5em;
+        padding: 0;
+    }
 
-    .mutual--pdf {
+
+
+    .pdf--credits, .mutual--pdf {
         display: none;
-        margin: auto;
-        display: flex;
-        width: 90%;
-        height: 100%;
-        align-items: center;
-        justify-content: center;
-        margin: auto;
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        z-index: -1;
     }
-
-
-    .pdf--credits {
-        width: 100%;
-        height: auto;
-        margin: auto;
-        background-color: #000;
-    }
-
 
 
     .grid--mutual--credits--p {
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 5px;
         margin: auto;
         justify-content: space-evenly;
         align-content: center;
@@ -1509,25 +1504,6 @@ footer {
     
 
     /* Mutual Credits */
-
-
-
-    .pdf--credits, .mutual--pdf {
-        display: none;
-        opacity: 0;
-        visibility: hidden;
-        position: absolute;
-        z-index: -1;
-    }
-
-    .grid--container--credits {
-        grid-template-rows: 15% 85%;
-        gap: 0;
-        padding: 0;
-    }
-
-
-
 
 
 
