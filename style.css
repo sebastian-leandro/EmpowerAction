@@ -1321,7 +1321,7 @@ footer {
 
 
     .grid--container--credits {
-        grid-template-rows: 25% 75%;
+        grid-template-rows: .25fr 1fr;
         gap: .5em;
         padding: 0;
     }
