@@ -1,0 +1,16 @@
+{
+  "name": "front-end",
+  "version": "1.0.0",
+  "description": "<p align=\"center\">   <img src=\"https://github.com/EmpowerAction/Front-End/blob/master/img/icono/1.png\" alt=\"Icono de la Plataforma\" width=\"1200\"/> </p>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express-validator": "^7.0.1",
+    "nodemailer": "^6.9.5"
+  }
+}
