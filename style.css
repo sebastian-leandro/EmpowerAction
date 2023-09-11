@@ -1319,9 +1319,14 @@ footer {
         width: 100%;
     }
 
+    .grid--container--credits {
+        grid-template-columns: none;
+        grid-template-rows: repeat(3, 1fr);
+        gap: .5em;
+    }
+
 
     .mutual--pdf {
-        display: none;
         margin: auto;
         display: flex;
         width: 90%;
@@ -1329,7 +1334,6 @@ footer {
         align-items: center;
         justify-content: center;
         margin: auto;
-        overflow: scroll;
     }
 
 
@@ -1337,12 +1341,6 @@ footer {
         width: 100%;
         height: auto;
         margin: auto;
-        background-color: #000;
-        display: none;
-        position: absolute;
-        z-index: -1;
-        visibility: hidden;
-        opacity: 1;
     }
 
 
