@@ -1311,7 +1311,6 @@ footer {
     .mutual--credits {
         margin: 1rem auto;
         padding: 1rem;
-        overflow: scroll;
     }
 
 
@@ -1322,6 +1321,7 @@ footer {
 
 
     .mutual--pdf {
+        display: none;
         margin: auto;
         display: flex;
         width: 90%;
@@ -1338,6 +1338,11 @@ footer {
         height: auto;
         margin: auto;
         background-color: #000;
+        display: none;
+        position: absolute;
+        z-index: -1;
+        visibility: hidden;
+        opacity: 1;
     }
 
 
