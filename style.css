@@ -1327,13 +1327,13 @@ footer {
         height: 100%;
         align-items: center;
         justify-content: center;
-        margin: 2em auto;
+        margin: auto;
     }
 
 
     .pdf--credits {
-        height: 100%;
         width: 100%;
+        height: auto;
         margin: auto;
     }
 
@@ -1514,6 +1514,9 @@ footer {
         gap: 0;
         padding: 0;
     }
+
+
+
 
 
 
