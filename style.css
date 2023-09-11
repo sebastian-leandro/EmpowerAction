@@ -1319,14 +1319,10 @@ footer {
         width: 100%;
     }
 
-    .grid--container--credits {
-        grid-template-columns: none;
-        grid-template-rows: repeat(3, 1fr);
-        gap: .5em;
-    }
 
 
     .mutual--pdf {
+        display: none;
         margin: auto;
         display: flex;
         width: 90%;
@@ -1341,6 +1337,7 @@ footer {
         width: 100%;
         height: auto;
         margin: auto;
+        background-color: #000;
     }
 
 
@@ -1515,8 +1512,16 @@ footer {
 
 
 
+    .pdf--credits, .mutual--pdf {
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        z-index: -1;
+    }
+
     .grid--container--credits {
-        grid-template-rows: 40% 15% 45%;
+        grid-template-rows: 15% 85%;
         gap: 0;
         padding: 0;
     }
