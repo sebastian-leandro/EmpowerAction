@@ -858,6 +858,7 @@ footer {
     background-color: #5259da;
     color: #fff;
     text-transform: uppercase;
+    transition: .2s all ease;
 }
 
 
@@ -940,7 +941,8 @@ footer {
 
 .form--box button:hover {
     opacity: .7;
-    transition: .5s all ease;
+    transition: .2s all ease;
+    box-shadow: 0 3px 10px rgba(0, 120, 250, .9);
 }
 
 
@@ -1321,16 +1323,17 @@ footer {
     .mutual--pdf {
         margin: auto;
         display: flex;
-        width: 100%;
+        width: 90%;
         height: 100%;
         align-items: center;
         justify-content: center;
+        margin: 2em auto;
     }
 
 
     .pdf--credits {
         height: 100%;
-        width: 90%;
+        width: 100%;
         margin: auto;
     }
 
