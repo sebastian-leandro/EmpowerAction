@@ -118,6 +118,33 @@ document.getElementById("textarea").addEventListener("keyup", function(){
 });
 
 
+
+// PDF 
+
+
+
+const pdfSlider = document.querySelector(".pdf--slider");
+const pdfImg = pdfSlider.querySelectorAll("img");
+
+let index = 0;
+
+const slideCount = pdfImg.length;
+
+setInterval(function() {
+    let percentage = index * -25;
+    pdfSlider.style.transform = `translateX(${percentage}%)`;
+    index++;
+    if(index >= slideCount) {
+        index = 0;
+    }
+}, 7000);
+
+
+
+
+
+
+
 // Scroll Reveal 
 
 const sr = ScrollReveal ({
