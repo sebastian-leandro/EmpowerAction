@@ -1420,7 +1420,7 @@ footer {
     }
 
     .pdf--slider img {
-        width: 100%;
+        width: 25%;
         height: 100%;
         object-fit: cover;
     }
@@ -1434,7 +1434,7 @@ footer {
     }
 
     .grid--mutual--credits--p {
-        height: 90%;
+        height: 75%;
     }
 
     .grid--item--p--mutual:first-child, .grid--item--p--mutual:nth-child(3), .grid--item--p--mutual:nth-child(5) {
