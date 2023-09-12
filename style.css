@@ -1410,7 +1410,8 @@ footer {
 
     .grid--container--credits {
         grid-template-columns: none;
-        grid-template-rows:48% 4% 48%;
+        display: flex;
+        flex-direction: column;
     }
 
 
