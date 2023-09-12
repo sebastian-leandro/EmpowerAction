@@ -1410,12 +1410,13 @@ footer {
     .pdf {
         width: 95%;
         height: 100%;
+        display: grid;
+        grid-template-rows: 90% 10%;
     }
 
 
     .pdf--container {
         width: 100%;
-        margin: auto;
         height: 100%;
     }
 
