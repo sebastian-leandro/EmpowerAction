@@ -1403,7 +1403,7 @@ footer {
 
     .grid--container--credits {
         grid-template-columns: none;
-        grid-template-rows: 40% 15% 40%;
+        grid-template-rows: repeat(3, auto);
         margin: 0;
         padding: 0;
     }
@@ -1418,7 +1418,7 @@ footer {
     .pdf--container {
         width: 100%;
         margin: auto;
-        height: 80%;
+        height: 100%;
     }
 
     .pdf--slider img {
