@@ -1580,37 +1580,7 @@ footer {
         margin: 0;
     }
 
-    
-
-    /* Mutual Credits */
-
-
-    .grid--container--credits {
-        grid-template-columns: none;
-        grid-template-rows:48% 4% 48%;
-    }
-
-
-    .pdf--container {
-        width: 100%;
-        margin: auto;
-    }
-
-    .grid--item--p--mutual:first-child, .grid--item--p--mutual:nth-child(3), .grid--item--p--mutual:nth-child(5) {
-        margin: auto;
-
-    }
-
-
-
-
-
-
-
-
-
-
-    
+      
     .roadmap--container {
         width: 90%;
         height: 90%;
@@ -1716,12 +1686,6 @@ footer {
         height: 4rem;
     }
 
-
-    .grid--container--credits {
-        grid-template-rows: 20% 5% 75%;
-        gap: 0;
-        padding: 1.2rem 0;
-    }
 
 }
 
