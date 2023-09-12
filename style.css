@@ -1421,6 +1421,12 @@ footer {
         height: 100%;
     }
 
+    .pdf--slider img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
 
     .grid--item--p--mutual {
         box-shadow: 0 3px 8px rgba(0, 120, 250, .9);
@@ -1433,6 +1439,8 @@ footer {
         margin: auto;
 
     }
+
+
 
 
     /* RoadMap */
