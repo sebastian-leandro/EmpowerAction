@@ -1403,12 +1403,12 @@ footer {
 
     .grid--container--credits {
         grid-template-columns: none;
-        grid-template-rows: 45% 10% 45%;
+        grid-template-rows: 40% 15% 45%;
     }
 
 
     .pdf {
-        width: 90%;
+        width: 95%;
         height: 100%;
     }
 
