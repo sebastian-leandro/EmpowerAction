@@ -1403,7 +1403,7 @@ footer {
 
     .grid--container--credits {
         grid-template-columns: none;
-        grid-template-rows: 30% 10% 40%;
+        grid-template-rows: 30% 10% 30%;
     }
 
 
@@ -1423,6 +1423,10 @@ footer {
         width: 25%;
         height: 100%;
         object-fit: cover;
+    }
+
+    .grid--mutual--credits--p {
+        height: 80%;
     }
 
 
