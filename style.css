@@ -1403,7 +1403,7 @@ footer {
 
     .grid--container--credits {
         grid-template-columns: none;
-        grid-template-rows: 40% 15% 45%;
+        grid-template-rows: 30% 15% 45%;
     }
 
 
