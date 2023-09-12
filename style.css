@@ -1403,7 +1403,7 @@ footer {
 
     .grid--container--credits {
         grid-template-columns: none;
-        grid-template-rows: 30% 10% 50%;
+        grid-template-rows: 30% 10% 40%;
     }
 
 
@@ -1433,9 +1433,6 @@ footer {
         width: 85%;
     }
 
-    .grid--mutual--credits--p {
-        height: 75%;
-    }
 
     .grid--item--p--mutual:first-child, .grid--item--p--mutual:nth-child(3), .grid--item--p--mutual:nth-child(5) {
         margin: auto;
