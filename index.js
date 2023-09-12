@@ -123,7 +123,7 @@ document.getElementById("textarea").addEventListener("keyup", function(){
 
 
 
-/*const pdfSlider = document.querySelector(".pdf--slider");
+const pdfSlider = document.querySelector(".pdf--slider");
 const pdfImg = pdfSlider.querySelectorAll("img");
 
 let index = 0;
@@ -137,7 +137,7 @@ setInterval(function() {
     if(index >= slideCount) {
         index = 0;
     }
-}, 7000);*/
+}, 7000);
 
 
 
