@@ -596,6 +596,7 @@ body {
     margin-bottom: .50em;
     background: linear-gradient(to right, #010550, #8915b3);
     border-radius: 16px;
+    transition: .5s all ease;
 }
 
 .pdf--slider {
@@ -994,6 +995,12 @@ footer {
 .grid--item--p--mutual:hover {
     transform: scale(1.050);
     transition: .5s all ease-in-out;
+}
+
+.pdf--container a:hover {
+   filter: drop-shadow(0 0 .5rem rgba(0, 90, 230, .7)) ;
+   transform: scale(1.050);
+   transition: .5s all ease;
 }
 
 
