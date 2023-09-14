@@ -78,15 +78,29 @@ $(document).ready(function() {
         const email = $("#email").val();
         const message = $("#message").val();
         
+        // Provide feedback to the user that the email is being sent
+        $("#response").html("Sending...");
+
         $.ajax({
             type: "POST",
             url: "/api/send-email",
             data: { name, email, message },
             success: function(response) {
-                $("#response").html("Email sent: " + response);
+                // Provide success feedback to the user
+                $("#response").html("<span class='success'>Email sent successfully!</span>");
+
+                // Reset form fields after successful email send
+                $("#name").val("");
+                $("#email").val("");
+                $("#message").val("");
             },
             error: function(error) {
-                $("#response").html("An error occurred: " + error.responseText);
+                // Provide a user-friendly error message
+                let errorMessage = "There was a problem sending the email. Please try again later.";
+                if(error.responseText) {
+                    errorMessage = error.responseText;
+                }
+                $("#response").html("<span class='error'>" + errorMessage + "</span>");
             }
         });
     });
