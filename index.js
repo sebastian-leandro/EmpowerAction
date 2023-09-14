@@ -78,8 +78,20 @@ $(document).ready(function() {
         const email = $("#email").val();
         const message = $("#message").val();
         
+        // Check if all fields are filled
+        if (!name || !email || !message) {
+            $("#response").html("<span class='error'>Please fill in all the fields.</span>");
+            return;
+        }
+
         // Provide feedback to the user that the email is being sent
-        $("#response").html("Sending...");
+        $("#response").fadeOut(function() {
+            $(this).html("Sending...").fadeIn();
+        });
+
+        // Disable the submit button during the sending process
+        const $submitButton = $(this).find("button[type='submit']");
+        $submitButton.prop("disabled", true);
 
         $.ajax({
             type: "POST",
@@ -87,20 +99,30 @@ $(document).ready(function() {
             data: { name, email, message },
             success: function(response) {
                 // Provide success feedback to the user
-                $("#response").html("<span class='success'>Email sent successfully!</span>");
+                $("#response").fadeOut(function() {
+                    $(this).html("<span class='success'>Email sent successfully!</span>").fadeIn();
+                });
 
                 // Reset form fields after successful email send
                 $("#name").val("");
                 $("#email").val("");
                 $("#message").val("");
+
+                // Enable the submit button
+                $submitButton.prop("disabled", false);
             },
             error: function(error) {
                 // Provide a user-friendly error message
-                let errorMessage = "There was a problem sending the email. Please try again later.";
-                if(error.responseText) {
-                    errorMessage = error.responseText;
-                }
-                $("#response").html("<span class='error'>" + errorMessage + "</span>");
+                $("#response").fadeOut(function() {
+                    let errorMessage = "There was a problem sending the email. Please try again later.";
+                    if (error.responseText) {
+                        errorMessage = error.responseText;
+                    }
+                    $(this).html("<span class='error'>" + errorMessage + "</span>").fadeIn();
+                });
+
+                // Enable the submit button
+                $submitButton.prop("disabled", false);
             }
         });
     });
