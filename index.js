@@ -149,7 +149,7 @@ document.getElementById("name").addEventListener("keyup", function(){
 document.getElementById("email").addEventListener("keyup", function(){
     updateLabel(labelEmail, this);
 });
-document.getElementById("textarea").addEventListener("keyup", function(){
+document.getElementById("message").addEventListener("keyup", function(){
     updateLabel(labelArea, this);
 });
 
