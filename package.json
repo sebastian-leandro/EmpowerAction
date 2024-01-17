@@ -12,5 +12,11 @@
   "dependencies": {
     "express-validator": "^7.0.1",
     "nodemailer": "^6.9.5"
+  },
+  "devDependencies": {
+    "standard": "^17.1.0"
+  },
+  "eslintConfig": {
+    "extends": "standard"
   }
 }
