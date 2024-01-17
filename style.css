@@ -16,11 +16,9 @@
 }
 
 *::selection {
-    background-color: #43174f;
+    background-color: transparent;
     color: #00ffbd;
   }
-
-
 
 /* Variables */
 
